@@ -110,8 +110,11 @@
             <span class="color-gray">keany</span>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        window.addEventListener('scroll', () => {
+      new Glide('.glide').mount()
+
+      window.addEventListener('scroll', () => {
             if (window.scrollY > document.querySelector('section').offsetHeight * 3 - 300) {
                 document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll';
                 document.querySelector('.scroll').style.marginRight = '0';
@@ -123,10 +126,6 @@
                 document.querySelector('.scroll').style.marginRight = '0';
             }
         });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-      new Glide('.glide').mount()
     </script>
 </body>
 </html>
