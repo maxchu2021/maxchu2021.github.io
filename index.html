@@ -1,112 +1,115 @@
-<div id="screen"></div>
-<style>
-	body {
-		font-family: "Courier New"; 
-		color: #A0FCD7; 
-		font-size: large; 
-		background: #000; 
-		font-weight: bold; 
-		padding:20px;
-	} 
-</style>
-<script>
-	var 
-		// text line
-		line = [],
-
-		// last print time for printCharacter()
-		lastPrintTime = 0,
-		
-		// not clear the screen if it's the last line.
-		lastLine = false,
-		
-		character = [];
-		
-		cracked = '';
-		
-	line[0] = 'Wake up...',
-	line[1] = 'The Matrix has you...',
-	line[2] = 'Follow the white rabbit.',
-	line[3] = 'Knock, knock.';
-	
-	character[0] = '1';
-	character[1] = ' ';
-	character[2] = 't';
-	character[3] = 'u';
-	character[4] = 'e';
-	character[5] = '0';
-	character[6] = 'g';
-	character[7] = 'm';
-	character[8] = 'x';
-	character[9] = 'h';
-	character[10] = 'n';
-	character[11] = 't';
-	character[12] = 'a';
-	character[13] = '@';
-	character[14] = 'N';
-	character[15] = 'K';
-	character[16] = '2';
-	character[17] = '4';
-	character[18] = '8';
-	character[19] = '9';
-	character[20] = 'c';
-	character[21] = 'C';
-	character[22] = 'o';
-	character[23] = '9';
-
-	window.onload = function(){
-		printAllLine();
-		crackAllCharacter('Contact me @maxchu2021');
-		setTimeout(function() {
-     document.getElementById("screen").innerHTML = cracked;
-    }, lastPrintTime + 3000);
-	}
-
-	printAllLine = function(){
-		for(var i=0;i<line.length;i++){
-			if(i == line.length - 1)
-				lastLine = true;
-			printCharacter(line[i]);
-		}	
-	}
-	
-	printCharacter = function(str){
-		for(var i=0;i<str.length;i++){
-			printSpeed = 100 * usefloor(1,3);
-			printTime = printSpeed + lastPrintTime;
-			setTimeout('document.getElementById("screen").innerHTML = document.getElementById("screen").innerHTML + "' + str.substring(i,(i + 1)) + '";', printTime);	
-			lastPrintTime = printTime;
-		}
-		lastPrintTime = printTime + (1000 * usefloor(2,4));
-		if(!lastLine)
-			setTimeout('document.getElementById("screen").innerHTML = ""', lastPrintTime);	
-	}
-	
-	crackCharacter = function(str){
-		for(var i=0;i<character.length;i++){
-			printSpeed = 50 * usefloor(1,2);
-			printTime = printSpeed + lastPrintTime;
-			randChar = setTimeout('document.getElementById("screen").innerHTML = "' + cracked + character[i] + '";', printTime);	
-			if(character[i] == str[0]){
-				cracked = cracked + character[i];
-				setTimeout('document.getElementById("screen").innerHTML = "' + cracked + '"', printTime + 100);
-				clearTimeout(randChar);
-				break;
-			}
-			lastPrintTime = printTime;
-		}	
-	}
-	
-	crackAllCharacter = function(str){
-		for(var i=0;i<str.length;i++){
-			crackCharacter(str[i]);
-		}
-	}
-	
-	randomPrint = function(str){
-	}
-
-	function usefloor(min,max) {
-		return Math.floor(Math.random()*(max-min+1)+min);
-	}
-</script>
+<!-- 
+Inspired by
+https://www.pinterest.com/pin/10485011648607371/
+https://dribbble.com/shots/11015129-Tura 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MAXC</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+</head>
+<body>
+    <section class="intro">
+        <header>
+            MA<br>XC
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-container uppercase">
+            <span class="iam">I am</span> 
+            <span class="name">MAXC</span> 
+            <span class="title">A Senior<br>Web Developer</span>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/maxchu2021" target="_blank"><i class="demo-icon icon-facebook">&#xf09a;</i></a></li>
+                <li><a href="https://www.instagram.com/maxfei22" target="_blank"><i class="demo-icon icon-instagram">&#xf16d;</i></a></li>
+                <li><a href="https://github.com/maxchu2021" target="_blank"><i class="demo-icon icon-github-circled">&#xf09b;</i></a></li>
+            </ul>
+            <div class="scroll uppercase">Scroll <span class="line">___</span></div>
+        </footer>
+    </section>
+    <section class="projects">
+        <a name="projects"></a>
+        <div class="main-container uppercase">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="./img/vacaycar.jpg" width="500">
+                        <h2>VacayCar</h2>
+                        <p>一個行程規劃的旅遊網站，包含行程導覽、自訂行程、線上預訂系統、部落格和後台內容管理系統。</p>
+                        <a href="http://www.otiswu.com/portfolio/vacacars/" target="_blank" class="btn">View Project</a>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./img/entsoc.org.tw.png" width="500">
+                        <h2>台灣昆蟲學會</h2>
+                        <p>台灣昆蟲學會官網，有最新消息、會議及活動公告、線上捐款、線上報名、發表論文匯出Word檔案和後台內容管理系統。</p>
+                        <a href="http://entsoc.org.tw/" target="_blank" class="btn">View Project</a>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./img/oldtree.life.png" width="500">
+                        <h2>老樹報報</h2>
+                        <p>全國城鄉老樹資源地圖，包含回報系統、最新消息和後台內容管理系統。</p>
+                        <a href="http://oldtree.life/" target="_blank" class="btn">View Project</a>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./img/ehrm.png" width="500">
+                        <h2>eHRM</h2>
+                        <p>一個企業人力資源管理系統，包含系統管理、招募管理、錄取管理和報到管理等</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
+                      </svg></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+                      </svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <a name="contact"></a>
+        <div class="main-container">
+            <h2>Contact</h2>
+            <h3>E-mail</h3>
+            <span class="color-gray">maxchu2021@gmail.com</span>
+            <h3>Line</h3>
+            <span class="color-gray">keany</span>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > document.querySelector('section').offsetHeight * 2 - 300) {
+                document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll';
+                document.querySelector('.scroll').style.marginRight = '0';
+            } else if (window.scrollY > document.querySelector('section').offsetHeight - 500) {
+                document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll <span class="line">___</span>';
+                document.querySelector('.scroll').style.marginRight = '-30px';
+            } else {
+                document.querySelector('.scroll').innerHTML = 'Scroll <span class="line">___</span>';
+                document.querySelector('.scroll').style.marginRight = '0';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
+</body>
+</html>
