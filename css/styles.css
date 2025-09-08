@@ -186,6 +186,7 @@ h2 {
     position: relative;
 }
 .glide__arrow {
+    border-radius: 50% !important;
     background: white !important;
 }
 .glide__arrow:hover {
@@ -193,4 +194,56 @@ h2 {
 }
 .intro .main-container {
     width: 500px;
+}
+@media (max-width: 768px) {
+    .main-container,
+    .intro .main-container {
+        width: 100%;
+    }
+    .projects .main-container {
+        width: 90%;
+    }
+    header {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    nav {
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    nav li {
+        margin-right: 30px;
+    }
+    footer ul {
+        padding-left: 20px; 
+    }
+    .projects img {
+        width: 200px;
+    }
+    .projects h2 {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 6rem;
+    }
+    .scroll {
+        position: fixed;
+        right: -30px;
+        bottom: 100px;
+    }
+    .iam {
+        margin-left: 35%;
+    }
+    .title {
+        margin-left: 50%;
+    }
+    .glide__arrow--left {
+        left: 0 !important;
+    }
+    .glide__arrow--right {
+        right: 0 !important;
+    }
+    .glide__arrow {
+        top: 40% !important;
+    }
 }
