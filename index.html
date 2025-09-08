@@ -20,6 +20,7 @@ https://dribbble.com/shots/11015129-Tura
         </header>
         <nav>
             <ul>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -37,6 +38,25 @@ https://dribbble.com/shots/11015129-Tura
             </ul>
             <div class="scroll uppercase">Scroll <span class="line">___</span></div>
         </footer>
+    </section>
+    <section class="about">
+        <a name="about"></a>
+        <div class="main-container">
+            <h2>About Me</h2>
+            <div class="flex">
+                <div>
+                    <img src="./img/max.jpg" width="300">
+                </div>
+                <div>
+                    <p>我是Max Chu，一名專注於網站開發與程式教育的工程師。在二十多年的職涯中，我從未停止學習，也不斷追求技術上的精進，希望能透過分享及教學，讓更多人看見程式的價值與樂趣。</p>
+                    <p>在工作方面，我是能夠兼任前端和後端的全端工程師，前端主要使用React與Vue開發互動式網頁與應用程式，後端使用PHP和各種框架。我熟悉現代前端開發流程，包含RWD響應式設計、API 串接、版型切版，後端開發使用Drupal 8內容管理框架或是客製化內容管理系統，以及團隊協作的Git版本控管。曾在多間中小企業公司內參與專案和產品研發，我也接受客戶委託，協助完成網站設計與功能開發，累積了許多跨產業的合作經驗。</p>
+                    <p>除了專案開發，我也很熱衷於程式教學。我有機會帶領國小學生進入程式世界，從最基礎的Scratch、Minecraft Education、Discovery Education和邏輯思維，到進一步接觸AI生成多媒體，讓孩子們在學習過程中體驗解決問題的成就感。這段經驗讓我深刻感受到，程式設計不僅是一種技能，更是一種能啟發創意與培養邏輯的工具。</p>
+                    <p>我的專業理念是：程式設計應該既專業，也要易於理解。在專案中，我注重細節，確保介面清晰、互動順暢；在教學中，我強調循序漸進，幫助學生或客戶輕鬆掌握核心概念。</p>
+                    <p>如果你對合作或教學有興趣，歡迎透過網站與我聯繫！</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">聯絡我</a>
+        </div>
     </section>
     <section class="projects">
         <a name="projects"></a>
@@ -97,10 +117,10 @@ https://dribbble.com/shots/11015129-Tura
     </section>
     <script>
         window.addEventListener('scroll', () => {
-            if (window.scrollY > document.querySelector('section').offsetHeight * 2 - 300) {
+            if (window.scrollY > document.querySelector('section').offsetHeight * 3 - 300) {
                 document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll';
                 document.querySelector('.scroll').style.marginRight = '0';
-            } else if (window.scrollY > document.querySelector('section').offsetHeight - 500) {
+            } else if (window.scrollY > document.querySelector('section').offsetHeight - 300) {
                 document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll <span class="line">___</span>';
                 document.querySelector('.scroll').style.marginRight = '-30px';
             } else {

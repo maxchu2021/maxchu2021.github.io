@@ -156,9 +156,16 @@ footer li {
 .flex {
     display: flex;
 }
-.projects .main-container {
-    padding-top: 140px;
+.about .main-container {
+    width: 1200px;
 }
+.about img {
+    border-radius: 20px;
+}
+.projects .main-container {
+    padding-top: 100px;
+}
+.about h2,
 .projects h2 {
     margin: 10px;
     font-size: 60px;
@@ -195,10 +202,28 @@ h2 {
 .intro .main-container {
     width: 500px;
 }
+.about p {
+    text-align: left;
+    width: 80%;
+    margin: 20px auto;
+}
+.about h2 {
+    padding-top: 100px;
+}
+.about .btn {
+    margin-top: 20px;
+}
 @media (max-width: 768px) {
     .main-container,
+    .about .main-container,
     .intro .main-container {
         width: 100%;
+    }
+    .about .flex {
+        display: block;
+    }
+    .about {
+        height: auto;
     }
     .projects .main-container {
         width: 90%;
@@ -245,5 +270,12 @@ h2 {
     }
     .glide__arrow {
         top: 40% !important;
+        padding: 4px 6px !important;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        margin-right: 10px;
     }
 }
