@@ -362,6 +362,16 @@ footer ul li:last-child {
     padding: 0 15px;
   }
 }
+.projects .main-container p {
+  text-align: left;
+  width: 60%;
+  margin: 20px auto;
+}
+@media screen and (max-width: 767px) {
+  .projects .main-container p {
+    width: 100%;
+  }
+}
 .projects h2 {
   margin-top: 80px;
   margin-bottom: 0px;
