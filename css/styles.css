@@ -352,6 +352,9 @@ footer ul li:last-child {
 .projects {
   padding: 100px 0;
 }
+.projects img {
+  width: 100%;
+}
 .projects .main-container {
   padding-top: 0;
   max-width: 1200px;
