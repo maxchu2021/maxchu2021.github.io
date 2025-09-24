@@ -400,6 +400,15 @@ footer {
       // width: 90%;
       padding: 0 15px;
     }
+
+    p {
+      text-align: left;
+      width: 60%;
+      margin: 20px auto;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
   }
   
   h2 {
