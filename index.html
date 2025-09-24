@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAXC - A Senior Web Developer</title>
+    <title>Max</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
 </head>
 <body>
     <section class="intro">
-        <header>
-            MA<br>XC
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="main-container uppercase">
-            <span class="iam">I am</span> 
-            <span class="name">MAXC</span> 
-            <span class="title">A Senior<br>Web Developer</span>
+        <div class="main-container">
+            <header>
+                Max
+            </header>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#about">關於我</a></li> -->
+                    <li><a href="#projects">作品集</a></li>
+                    <li><a href="#services">服務</a></li>
+                    <li><a href="#contact">聯絡我</a></li>
+                </ul>
+            </nav>
+
+            <span class="iam">我是</span> 
+            <span class="name">Max</span> 
+            <span class="title">一名資深<br>網站工程師</span>
+            
+            <footer>
+                <!-- <ul>
+                    <li><a href="mailto:maxchu2021@gmail.com" target="_blank"><i class="icon icon-mail-1">&#xe802;</i></a></li>
+                </ul> -->
+                <div class="scroll uppercase">Scroll <span class="line">___</span></div>
+            </footer>
         </div>
-        <footer>
-            <ul>
-                <li><a href="https://www.facebook.com/maxchu2021" target="_blank"><i class="demo-icon icon-facebook">&#xf09a;</i></a></li>
-                <li><a href="https://www.instagram.com/maxfei22" target="_blank"><i class="demo-icon icon-instagram">&#xf16d;</i></a></li>
-                <li><a href="https://github.com/maxchu2021" target="_blank"><i class="demo-icon icon-github-circled">&#xf09b;</i></a></li>
-            </ul>
-            <div class="scroll uppercase">Scroll <span class="line">___</span></div>
-        </footer>
     </section>
-    <section class="about">
+    <!--<section class="about">
         <a name="about"></a>
         <div class="main-container">
-            <h2>About Me</h2>
+            <h2>關於我</h2>
             <div class="flex">
                 <div>
                     <img src="./img/max.jpg" width="300">
@@ -48,91 +49,292 @@
                     <p>曾在多間中小企業公司內參與專案開發和產品研發，擔任過的職務有工程師、專案經理，也有和參與過AppWorks創業加速器的團隊一起創業的經驗，也曾接案接受客戶委託，協助完成網站設計與功能開發，累積了許多跨產業的合作經驗。</p>
                     <p>除了專案開發，我也很熱衷於程式教學。我有機會帶領國小學生進入程式世界，從最基礎的Scratch、Minecraft Education、Discovery Education和邏輯思維，到進一步接觸AI生成多媒體，讓孩子們在學習過程中體驗解決問題的成就感。這段經驗讓我深刻感受到，程式設計不僅是一種技能，更是一種能啟發創意與培養邏輯的工具。</p>
                     <p>如果你有一個很棒的創業理念需要找人開發網站，或是對於前後端開發合作和程式教學有興趣，歡迎聯繫我來聊聊！</p>
+                    1.有跨各產業領域的經驗，包含旅遊業、印刷業、新創公司、政府標案。
+2.開發過金流串接、地圖服務、會員登入、統計圖表、線上編輯器。
+3.懂多個程式語言，包含 JS、Vue、React、PHP、Ruby、Go、NodeJs。
                 </div>
             </div>
             <a href="#contact" class="btn">聯絡我</a>
         </div>
-    </section>
+    </section>-->
+    <a name="projects"></a>
     <section class="projects">
-        <a name="projects"></a>
         <div class="main-container">
+            <h2>VacayCar</h2>
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    <li class="glide__slide"><img src="./img/vacaycar.jpg" width="500">
-                        <h2>VacayCar</h2>
-                        <p>和設計師Otis Wu合作開發的線上預訂旅遊網站，包含行程導覽、自訂行程、線上預訂系統、部落格和後台內容管理系統。</p>
-                        <a href="http://www.otiswu.com/portfolio/vacacars/" target="_blank" class="btn">View Project</a>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="./img/ehrm.jpg" width="500">
-                        <h2>eHRM</h2>
-                        <p>一個企業人力資源管理系統，包含系統管理、招募管理、錄取管理和報到管理等，我負責設計UI和開發前端，使用React.js框架。</p>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="./img/itrail.jpg" width="500">
-                        <h2>台灣步道守護網</h2>
-                        <p>使用到PWA技術開發的回報系統，使用手機來瀏覽頁面時即使在離線的狀態下也能正常操作系統。</p>
-                        <a href="https://itrail.tw/" target="_blank" class="btn">View Project</a>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="./img/entsoc.jpg" width="500">
-                        <h2>台灣昆蟲學會</h2>
-                        <p>使用Drupal 8內容管理框架獨立開發的台灣昆蟲學會官網，有最新消息、會議及活動公告、線上捐款、線上報名、發表論文匯出Word檔案和後台內容管理系統。</p>
-                        <a href="http://entsoc.org.tw/" target="_blank" class="btn">View Project</a>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="./img/oldtree.jpg" width="500">
-                        <h2>老樹報報</h2>
-                        <p>全國城鄉老樹資源地圖，包含回報系統、最新消息和後台內容管理系統，使用到Drupal 8內容管理框架。</p>
-                        <a href="http://oldtree.life/" target="_blank" class="btn">View Project</a>
-                    </li>
-                  </ul>
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./img/vacaycar_1.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/vacaycar_2.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/vacaycar_3.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/vacaycar_4.jpg" width="500">
+                        </li>
+                    </ul>
                 </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet" data-glide-dir="=4"></button>
+            </div>
+            <p>和設計師Otis Wu合作開發的線上預訂旅遊網站，包含行程導覽、自訂行程、線上預訂系統、部落格和後台內容管理系統。</p>
+            <a href="http://www.otiswu.com/portfolio/vacacars/" target="_blank" class="btn">作品介紹</a>
+
+            <h2>eHRM</h2>
+            <div class="glide2">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./img/ehrm_1.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/ehrm_2.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/ehrm_3.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/ehrm_4.jpg" width="500">
+                        </li>
+                    </ul>
                 </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                        <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
-                      </svg></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                        <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
-                      </svg></button>
+            </div>
+            <p>一個企業人力資源管理系統，包含系統管理、招募管理、錄取管理和報到管理等，我負責設計UI和開發前端，使用React.js框架。</p>
+
+            <h2>台灣步道守護網</h2>
+            <div class="glide3">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./img/itrail_1.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/itrail_2.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/itrail_3.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/itrail_4.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/itrail_5.jpg" width="500">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>使用到PWA技術開發的回報系統，使用手機來瀏覽頁面時即使在離線的狀態下也能正常操作系統。</p>
+            <a href="https://itrail.tw/" target="_blank" class="btn">連結官網</a>
+            
+            <h2>台灣昆蟲學會</h2>
+            <div class="glide4">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./img/entsoc_1.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/entsoc_2.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/entsoc_3.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/entsoc_4.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/entsoc_5.jpg" width="500">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>使用Drupal 8內容管理框架獨立開發的台灣昆蟲學會官網，有最新消息、會議及活動公告、線上捐款、線上報名、發表論文匯出Word檔案和後台內容管理系統。</p>
+            <a href="http://entsoc.org.tw/" target="_blank" class="btn">連結官網</a>
+
+            <h2>老樹報報</h2>
+            <div class="glide5">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./img/oldtree_1.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/oldtree_2.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/oldtree_3.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/oldtree_4.jpg" width="500">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./img/oldtree_5.jpg" width="500">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>全國城鄉老樹資源地圖，包含回報系統、最新消息和後台內容管理系統，使用到Drupal 8內容管理框架。</p>
+            <a href="http://oldtree.life/" target="_blank" class="btn">連結官網</a>
+        </div>
+    </section>
+
+    <a name="services"></a>
+    <section class="services">
+        <div class="main-container">
+            <h2>服務特色</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>前後端程式開發</h3>
+                    <p>精通 React, Vue 等前端框架，以及 PHP 後端技術，提供完整的全端開發解決方案。</p>
+                </div>
+                <!-- <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>多種程式語言</h3>
+                    <p>熟悉 JavaScript/TypeScript, Python, PHP, Java 等多種程式語言，能根據專案需求選擇最適合的技術棧。</p>
+                </div> -->
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>團隊協作經驗</h3>
+                    <p>豐富的跨團隊合作經驗，能與設計師、前端與後端開發者無縫配合，確保專案順利進行。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>跨產業經驗</h3>
+                    <p>累積多個產業的專案經驗，包括教育科技、旅遊、人力資源等，能快速理解不同產業需求並提供專業解決方案。</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
-        <a name="contact"></a>
+    
+    <!--<section class="services">
         <div class="main-container">
-            <h2>Contact</h2>
-            <h3>E-mail</h3>
-            <span class="color-gray">maxchu2021@gmail.com</span>
-            <h3>Line</h3>
-            <span class="color-gray">keany</span>
+            <h2>客戶輪廓</h2>
+            <div class="client-grid">
+                <div class="client-card">
+                    <div class="client-icon">🏢</div>
+                    <h3>新創公司</h3>
+                    <p>希望藉由我們的技術提供競爭力，快速推動公司成長。</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">📈</div>
+                    <h3>傳統產業</h3>
+                    <p>希望透過我們的技術增加營運效率，提升競爭力。</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="services">
+        <div class="main-container">
+            <h2>服務項目</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>前端官網開發</h3>
+                        <div class="price">NT$20,000 起</div>
+                        <p class="subtitle">模板網站</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>3-5 頁基本架構</li>
+                        <li>響應式設計</li>
+                        <li>基本SEO優化</li>
+                        <li>聯絡表單功能</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即諮詢</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>前後端功能開發</h3>
+                        <div class="price">NT$30,000 - 50,000</div>
+                        <p class="subtitle">動態網站</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>含購物車系統</li>
+                        <li>金流串接</li>
+                        <li>會員系統</li>
+                        <li>後台管理介面</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即諮詢</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>客製化開發</h3>
+                        <div class="price">按需報價</div>
+                        <p class="subtitle">客製化官網與系統</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>完整需求分析</li>
+                        <li>客製化功能開發</li>
+                        <li>API 整合</li>
+                        <li>長期技術支援</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即諮詢</a>
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-      new Glide('.glide').mount()
 
-      window.addEventListener('scroll', () => {
-            if (window.scrollY > document.querySelector('section').offsetHeight * 3 - 300) {
-                document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll';
-                document.querySelector('.scroll').style.marginRight = '0';
-            } else if (window.scrollY > document.querySelector('section').offsetHeight - 300) {
-                document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll <span class="line">___</span>';
-                document.querySelector('.scroll').style.marginRight = '-30px';
-            } else {
-                document.querySelector('.scroll').innerHTML = 'Scroll <span class="line">___</span>';
-                document.querySelector('.scroll').style.marginRight = '0';
-            }
-        });
-    </script>
+    <section class="process">
+        <div class="main-container">
+            <h2>服務流程</h2>
+            <div class="process-timeline">
+                <div class="process-item">
+                    <div class="process-icon">1</div>
+                    <h3>聯繫需求</h3>
+                    <p>請透過表單或通訊軟體與我聯繫，告訴我您的需求</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">2</div>
+                    <h3>第一次會議</h3>
+                    <p>進行視訊或面對面會議，詳細討論專案細節</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">3</div>
+                    <h3>提供報價單</h3>
+                    <p>根據需求提供詳細報價單與時程規劃</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">4</div>
+                    <h3>簽回付訂金</h3>
+                    <p>確認報價後簽訂合約並支付50%訂金</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">5</div>
+                    <h3>執行</h3>
+                    <p>開始進行專案開發，定期回報進度</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">6</div>
+                    <h3>驗收</h3>
+                    <p>完成後進行測試與驗收，確認功能符合需求</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">7</div>
+                    <h3>結案收尾款</h3>
+                    <p>專案上線，支付尾款並交付所有檔案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="contact"></a>
+    <section class="contact">
+        <div class="main-container">
+            <h2>聯絡我</h2>
+            <div class="justify-center mt-40">
+                <div class="avatar"></div>
+                <p>來聊聊您所需要的服務</p>
+                <a href="mailto:maxchu2021@gmail.com" target="_blank"><i class="icon icon-mail-1 mt-40">&#xe802;</i></a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
