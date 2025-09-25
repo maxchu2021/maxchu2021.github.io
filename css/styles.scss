@@ -58,9 +58,12 @@ section {
 
     .main-container {
       width: 500px;
-      
+
       @media screen and (max-width: 767px) {
         width: 100%;
+        .title {
+          font-size: 0.8rem;
+        }
       }
     }
   }
@@ -518,15 +521,6 @@ h2 {
 }
 .glide__arrow:hover {
   background: #a1a4a8 !important;
-}
-
-.intro .main-container {
-  width: 500px;
-}
-@media screen and (max-width: 767px) {
-  .intro .main-container {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 767px) {
