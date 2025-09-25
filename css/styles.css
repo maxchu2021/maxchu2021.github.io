@@ -109,11 +109,16 @@ nav ul li {
   margin-right: 40px;
 }
 @media screen and (max-width: 767px) {
+  nav {
+    backdrop-filter: blur(5px);
+    padding-bottom: 10px;
+    position: fixed;
+    left: 0;
+    text-align: center;
+  }
   nav ul {
     margin: 0;
     padding: 0;
-    position: relative;
-    left: 12px;
   }
   nav ul li {
     margin-right: 10px;
