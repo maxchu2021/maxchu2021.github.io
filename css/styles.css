@@ -48,6 +48,9 @@ section.intro .main-container {
   section.intro .main-container {
     width: 100%;
   }
+  section.intro .main-container .title {
+    font-size: 0.8rem;
+  }
 }
 section.contact {
   padding-top: 120px;
@@ -472,15 +475,6 @@ h2 {
   background: #a1a4a8 !important;
 }
 
-.intro .main-container {
-  width: 500px;
-}
-
-@media screen and (max-width: 767px) {
-  .intro .main-container {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 767px) {
   .main-container {
     width: 100%;
