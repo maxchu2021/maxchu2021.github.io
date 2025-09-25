@@ -50,13 +50,13 @@ section.intro .main-container {
   }
 }
 section.contact {
+  padding-top: 120px;
   height: 100vh;
 }
 section.contact i {
   font-size: 3rem;
 }
 section.contact h2 {
-  padding-top: 200px;
   margin: 0;
 }
 section.contact h3 {
@@ -94,33 +94,27 @@ nav {
   padding-top: 20px;
   z-index: 100;
 }
-
 nav ul {
   list-style: none;
   margin-right: 10px;
 }
-
-@media screen and (max-width: 767px) {
-  nav ul {
-    margin: 0;
-  }
-}
-nav li {
+nav ul li {
   display: inline;
-  margin-right: 60px;
-}
-
-@media screen and (max-width: 767px) {
-  nav li {
-    margin-right: 10px;
-  }
+  margin-right: 40px;
 }
 @media screen and (max-width: 767px) {
   nav {
     padding-top: 20px;
     padding-right: 20px;
   }
+  nav ul {
+    margin: 0;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -262,15 +256,6 @@ footer ul li:last-child {
   color: #333;
   text-decoration: none;
 }
-.btn-primary {
-  background: #4a6cf7;
-  border-color: #4a6cf7;
-}
-.btn-primary:hover {
-  background: rgb(25.1587301587, 68.3333333333, 244.8412698413);
-  border-color: rgb(25.1587301587, 68.3333333333, 244.8412698413);
-  color: #fff;
-}
 
 .flex {
   display: flex;
@@ -314,7 +299,6 @@ footer ul li:last-child {
   margin: 20px auto;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #666666;
 }
 @media screen and (max-width: 767px) {
   .about p {
@@ -357,7 +341,7 @@ footer ul li:last-child {
 }
 .projects .main-container {
   padding-top: 0;
-  max-width: 1200px;
+  max-width: 700px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
@@ -367,7 +351,7 @@ footer ul li:last-child {
 }
 .projects .main-container p {
   text-align: left;
-  width: 60%;
+  width: 80%;
   margin: 20px auto;
 }
 @media screen and (max-width: 767px) {
@@ -376,13 +360,25 @@ footer ul li:last-child {
   }
 }
 .projects h2 {
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 0px;
   text-align: center;
   position: relative;
 }
 @media screen and (max-width: 767px) {
   .projects h2 {
+    margin-bottom: 40px;
+  }
+}
+.projects h3 {
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .projects h3 {
     margin-bottom: 40px;
   }
 }
@@ -436,7 +432,6 @@ footer ul li:last-child {
   margin-bottom: 20px;
 }
 .projects .project-card-content .technologies span {
-  background: white;
   color: #4a6cf7;
   padding: 5px 12px;
   border-radius: 20px;
@@ -526,12 +521,16 @@ h2 {
 .process {
   padding: 80px 0;
 }
-
 .process h2 {
   text-align: center;
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 15px;
+}
+.process h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 .process-timeline {
@@ -689,13 +688,20 @@ h2 {
 
 /* Services Section */
 .services {
-  padding: 80px 0;
+  padding: 85px 0;
 }
 .services h2 {
   text-align: center;
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 15px;
+}
+.services h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 2rem;
 }
 
 .services-grid {

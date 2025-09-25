@@ -66,12 +66,12 @@ section {
   }
   
   &.contact {
+    padding-top: 120px;
     height: 100vh;
     i{
       font-size: 3rem;
     }
     h2 {
-      padding-top: 200px;
       margin: 0;
     }
     h3 {
@@ -110,29 +110,23 @@ nav {
   text-transform: uppercase;
   padding-top: 20px;
   z-index: 100;
-}
-nav ul {
-  list-style: none;
-  margin-right: 10px;
-}
-@media screen and (max-width: 767px) {
-  nav ul {
-    margin: 0;
-  }
-}
-nav li {
-  display: inline;
-  margin-right: 60px;
-}
-@media screen and (max-width: 767px) {
-  nav li {
+  ul {
+    list-style: none;
     margin-right: 10px;
+    li {
+      display: inline;
+      margin-right: 40px;
+    }
   }
-}
-@media screen and (max-width: 767px) {
-  nav {
+  @media screen and (max-width: 767px) {
     padding-top: 20px;
     padding-right: 20px;
+    ul {
+      margin: 0;
+      li {
+        margin-right: 10px;
+      }
+    }
   }
 }
   
@@ -281,17 +275,6 @@ footer {
     color: $color-dark;
     text-decoration: none;
   }
-  
-  &-primary {
-    background: $color-primary;
-    border-color: $color-primary;
-    
-    &:hover {
-      background: darken($color-primary, 10%);
-      border-color: darken($color-primary, 10%);
-      color: $color-light;
-    }
-  }
 }
   
 // Layout Utilities
@@ -351,7 +334,6 @@ footer {
     margin: 20px auto;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: lighten($color-dark, 20%);
     
     @media screen and (max-width: 767px) {
       width: 100%;
@@ -397,7 +379,7 @@ footer {
   
   .main-container {
     padding-top: 0;
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
     
     @media screen and (max-width: 767px) {
@@ -407,7 +389,7 @@ footer {
 
     p {
       text-align: left;
-      width: 60%;
+      width: 80%;
       margin: 20px auto;
       @media screen and (max-width: 767px) {
         width: 100%;
@@ -416,8 +398,20 @@ footer {
   }
   
   h2 {
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 0px;
+    text-align: center;
+    position: relative;
+    
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
     text-align: center;
     position: relative;
     
@@ -483,7 +477,6 @@ footer {
         margin-bottom: 20px;
         
         span {
-          background: lighten($color-primary, 40%);
           color: $color-primary;
           padding: 5px 12px;
           border-radius: 20px;
@@ -576,13 +569,17 @@ h2 {
 /* Process Timeline */
 .process {
   padding: 80px 0;
-}
-
-.process h2 {
-  text-align: center;
-  margin-bottom: 60px;
-  position: relative;
-  padding-bottom: 15px;
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
 }
 
 // .process h2::after {
@@ -759,22 +756,19 @@ h2 {
 
 /* Services Section */
 .services {
-  padding: 80px 0;
+  padding: 85px 0;
   h2 {
     text-align: center;
     margin-bottom: 60px;
     position: relative;
     padding-bottom: 15px;
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 80px;
-    //   height: 3px;
-    //   background: linear-gradient(90deg, #4a6cf7, #2541b2);
-    // }
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 2rem;
   }
 }
 
