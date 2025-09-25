@@ -28,6 +28,7 @@
 body {
   background-color: #121213;
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
   color: #dfdde1;
   margin: 0;
 }
@@ -42,14 +43,11 @@ section.intro {
   }
 }
 section.intro .main-container {
-  width: 500px;
+  width: 600px;
 }
 @media screen and (max-width: 767px) {
   section.intro .main-container {
     width: 100%;
-  }
-  section.intro .main-container .title {
-    font-size: 0.8rem;
   }
 }
 section.contact {
@@ -60,12 +58,21 @@ section.contact i {
   font-size: 3rem;
 }
 section.contact h2 {
-  margin: 0;
-}
-section.contact h3 {
   margin-top: 50px;
 }
-section.contact .avatar {
+section.contact p {
+  margin-top: 20px;
+}
+section.contact img {
+  border-radius: 20px;
+}
+@media screen and (max-width: 767px) {
+  section.contact img {
+    width: 100%;
+  }
+}
+
+.avatar {
   background-image: url("../img/max.jpg");
   background-size: cover;
   background-position: center;
@@ -73,9 +80,6 @@ section.contact .avatar {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-}
-section.contact p {
-  margin-top: 20px;
 }
 
 header {
@@ -89,7 +93,6 @@ header {
 }
 
 nav {
-  position: fixed;
   right: 0;
   font-weight: bold;
   float: right;
@@ -107,8 +110,7 @@ nav ul li {
 }
 @media screen and (max-width: 767px) {
   nav {
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-top: 60px;
   }
   nav ul {
     margin: 0;
@@ -495,7 +497,7 @@ h2 {
     margin-left: 35%;
   }
   .title {
-    margin-left: 50%;
+    margin-left: 45%;
   }
   .glide__arrow--left {
     left: 0 !important;
@@ -592,14 +594,14 @@ h2 {
   border-radius: 10px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 5px 10px #333;
+  box-shadow: 0 1px 3px #333;
   transition: all 0.3s ease;
   position: relative;
   border: 1px solid #333;
 }
 .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 1px 3px #333;
+  box-shadow: 0 5px 10px #333;
 }
 
 .pricing-card.featured {
@@ -640,7 +642,6 @@ h2 {
 
 .subtitle {
   color: #ccc;
-  font-size: 1rem;
   margin: 0;
 }
 
