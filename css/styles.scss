@@ -171,7 +171,7 @@ nav {
       margin: 0;
       padding: 0;
       li {
-        margin-right: 10px;
+        margin: 0 2px;
       }
     }
   }
@@ -203,7 +203,8 @@ a {
   
   @media screen and (max-width: 767px) {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }
   
@@ -355,10 +356,6 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
-    @media screen and (max-width: 767px) {
-      width: 100%;
-    }
   }
   
   h2 {
@@ -366,15 +363,6 @@ footer {
     margin: 0 0 40px;
     text-align: center;
     position: relative;
-    
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   width: 80px;
-    //   height: 4px;
-    //   background: linear-gradient(90deg, $color-primary, $color-secondary);
-    //   margin: 20px auto 0;
-    // }
   }
   
   p {
@@ -487,11 +475,6 @@ footer {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    // &:hover {
-    //   transform: translateY(-10px);
-    //   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    // }
     
     img {
       width: 100%;
@@ -623,17 +606,6 @@ h2 {
   }
 }
 
-// .process h2::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   width: 80px;
-//   height: 3px;
-//   background: linear-gradient(90deg, #4a6cf7, #2541b2);
-// }
-
 .process-timeline {
   display: flex;
   flex-wrap: wrap;
@@ -651,14 +623,7 @@ h2 {
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
-  // border: 1px solid #eee;
-  // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-
-// .process-item:hover {
-//   transform: translateY(-5px);
-//   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-// }
 
 .process-icon {
   width: 50px;
@@ -819,6 +784,9 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
 }
 
 .service-card {
@@ -826,14 +794,10 @@ h2 {
   padding: 40px 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  // border: 1px solid #eee;
-  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
 }
-
-// .service-card:hover {
-//   transform: translateY(-10px);
-//   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-// }
 
 .service-icon {
   font-size: 3rem;

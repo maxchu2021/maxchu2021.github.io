@@ -162,7 +162,7 @@ nav ul li {
     padding: 0;
   }
   nav ul li {
-    margin-right: 10px;
+    margin: 0 2px;
   }
 }
 
@@ -189,7 +189,8 @@ a:hover {
 @media screen and (max-width: 767px) {
   .main-container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -334,11 +335,6 @@ footer ul li:last-child {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-@media screen and (max-width: 767px) {
-  .about .main-container {
-    width: 100%;
-  }
 }
 .about h2 {
   padding-top: 0;
@@ -755,12 +751,22 @@ h2 {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (max-width: 767px) {
+  .services-grid {
+    margin-top: 40px;
+  }
+}
 
 .service-card {
   border-radius: 10px;
   padding: 40px 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .service-card {
+    padding: 10px;
+  }
 }
 
 .service-icon {
