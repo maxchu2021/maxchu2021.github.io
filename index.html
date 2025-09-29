@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <a name="top"></a>
@@ -39,17 +42,14 @@
             <div class="avatar"></div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💻</div>
                     <h3>前後端程式開發</h3>
                     <p>精通 React 和 Vue 前端框架，以及 PHP 各種 MVC 後端框架，提供完整的資訊系統開發解決方案。</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🤝</div>
                     <h3>團隊協作經驗</h3>
                     <p>豐富的跨團隊合作經驗，能與設計師、專案經理、前端與後端開發者無縫配合，確保專案順利進行。</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
                     <h3>跨產業經驗</h3>
                     <p>累積多個產業的專案經驗，能快速理解不同產業需求並提供專業解決方案。</p>
                 </div>
@@ -237,7 +237,48 @@
             <h2>聯絡我</h2>
             <div class="justify-center mt-40">
                 <img src="./img/make-it-happen.jpg" width="500">
-                <p>來聊聊您所需要的服務</p>
+                <p class="typewriter"></p>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const typeString = "來聊聊您所需要的服務";
+                        const typewriterElement = document.querySelector(".typewriter");
+                        let index = 0;
+                        const typingSpeed = 150;
+                        let hasAnimated = false;
+
+                        function typeWriter() {
+                            if (index < typeString.length) {
+                                typewriterElement.textContent += typeString.charAt(index);
+                                index++;
+                                setTimeout(typeWriter, typingSpeed);
+                            }
+
+                            if (index === typeString.length) {
+                                setTimeout(() => {
+                                    document.querySelector('.icon-mail-1').style.display = 'inline-block';
+                                }, 1000);
+                            }
+                        }
+
+                        // Create an intersection observer
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting && !hasAnimated) {
+                                    hasAnimated = true;
+                                    typeWriter();
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, {
+                            threshold: 0.5 // Trigger when 50% of the element is visible
+                        });
+
+                        // Start observing the typewriter element
+                        if (typewriterElement) {
+                            observer.observe(typewriterElement);
+                        }
+                    });
+                </script>
                 <a href="mailto:maxchu2021@gmail.com" target="_blank"><i class="icon icon-mail-1">&#xe802;</i></a>
             </div>
         </div>

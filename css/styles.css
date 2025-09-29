@@ -25,6 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   background-color: #121213;
   font-family: "Courier New", Courier, monospace;
@@ -33,6 +43,29 @@ body {
   margin: 0;
 }
 
+section.about .main-container {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+section.about .main-container .service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+section.about .main-container .service-card:nth-child(1) {
+  transition-delay: 0.4s;
+}
+section.about .main-container .service-card:nth-child(2) {
+  transition-delay: 0.6s;
+}
+section.about .main-container .service-card:nth-child(3) {
+  transition-delay: 0.8s;
+}
+section.about .main-container.in-view .service-card {
+  opacity: 1;
+  transform: translateY(0);
+}
 section.intro {
   background: radial-gradient(at 40% 20%, #3d3e43, black);
   height: 100vh;
@@ -61,7 +94,8 @@ section.contact h2 {
   margin-top: 50px;
 }
 section.contact p {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 section.contact img {
   border-radius: 20px;
@@ -91,6 +125,9 @@ header {
   padding-top: 40px;
   padding-left: 50px;
 }
+header a {
+  font-family: "Comfortaa", sans-serif;
+}
 
 nav {
   right: 0;
@@ -110,6 +147,10 @@ nav ul li {
 }
 @media screen and (max-width: 767px) {
   nav {
+    border-radius: 50px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
     backdrop-filter: blur(5px);
     padding-bottom: 10px;
     position: fixed;
@@ -168,10 +209,12 @@ a:hover {
 
 .name {
   display: block;
+  font-family: "Comfortaa", sans-serif;
   font-size: 10rem;
   font-weight: bold;
   line-height: 1;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 0px;
   color: #fff;
 }
 @media screen and (max-width: 767px) {
@@ -642,7 +685,6 @@ h2 {
 .pricing-header .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4a6cf7;
   margin: 10px 0;
 }
 
@@ -746,6 +788,10 @@ h2 {
 
 .mr-40 {
   margin-right: 40px;
+}
+
+.icon-mail-1 {
+  display: none;
 }
 
 

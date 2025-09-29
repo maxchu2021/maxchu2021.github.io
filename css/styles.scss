@@ -29,6 +29,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
   
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 // Base Styles
 $font-primary: 'Courier New', Courier, monospace;
 $color-text: #dfdde1;
@@ -49,6 +55,31 @@ body {
   
 // Sections
 section {
+  &.about {
+    .main-container {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+      animation-delay: 0.3s;
+      
+      .service-card {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        
+        &:nth-child(1) { transition-delay: 0.4s; }
+        &:nth-child(2) { transition-delay: 0.6s; }
+        &:nth-child(3) { transition-delay: 0.8s; }
+      }
+      
+      &.in-view {
+        .service-card {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  
   &.intro {
     background: radial-gradient(at 40% 20%, #3d3e43, black);
     height: 100vh;  
@@ -76,7 +107,8 @@ section {
       margin-top: 50px;
     }
     p{
-      margin-top: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     img {
       border-radius: 20px;
@@ -105,6 +137,9 @@ header {
   float: left;
   padding-top: 40px;
   padding-left: 50px;
+  a {
+    font-family: "Comfortaa", sans-serif;
+  }  
 }
 
 nav {
@@ -123,6 +158,10 @@ nav {
     }
   }
   @media screen and (max-width: 767px) {
+    border-radius: 50px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
     backdrop-filter: blur(5px);
     padding-bottom: 10px;
     position: fixed;
@@ -184,10 +223,12 @@ a {
 
 .name {
   display: block;
+  font-family: "Comfortaa", sans-serif;
   font-size: 10rem;
   font-weight: bold;
   line-height: 1;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 0px;
   color: $color-light;
   
   @media screen and (max-width: 767px) {
@@ -707,7 +748,7 @@ h2 {
   .price {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4a6cf7;
+    // color: #4a6cf7;
     margin: 10px 0;
   }
 }
@@ -819,6 +860,10 @@ h2 {
 
 .mr-40 {
   margin-right: 40px;
+}
+
+.icon-mail-1 {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
