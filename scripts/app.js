@@ -22,3 +22,23 @@ new Glide('.glide2', { autoplay: 2000 }).mount()
 new Glide('.glide3', { autoplay: 2000 }).mount()
 new Glide('.glide4', { autoplay: 2000 }).mount()
 new Glide('.glide5', { autoplay: 2000 }).mount()
+
+// Add scroll animation for about section
+const aboutSection = document.querySelector('section.about .main-container');
+const observerOptions = {
+  threshold: 0.3,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+if (aboutSection) {
+  observer.observe(aboutSection);
+}
