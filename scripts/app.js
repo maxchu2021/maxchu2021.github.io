@@ -42,3 +42,43 @@ const observer = new IntersectionObserver((entries) => {
 if (aboutSection) {
   observer.observe(aboutSection);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const typeString = "來聊聊您所需要的服務";
+    const typewriterElement = document.querySelector(".typewriter");
+    let index = 0;
+    const typingSpeed = 150;
+    let hasAnimated = false;
+
+    function typeWriter() {
+        if (index < typeString.length) {
+            typewriterElement.textContent += typeString.charAt(index);
+            index++;
+            setTimeout(typeWriter, typingSpeed);
+        }
+
+        if (index === typeString.length) {
+            setTimeout(() => {
+                document.querySelector('.icon-mail-1').style.display = 'inline-block';
+            }, 1000);
+        }
+    }
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !hasAnimated) {
+                hasAnimated = true;
+                typeWriter();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the element is visible
+    });
+
+    // Start observing the typewriter element
+    if (typewriterElement) {
+        observer.observe(typewriterElement);
+    }
+});
