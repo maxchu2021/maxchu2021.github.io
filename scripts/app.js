@@ -56,12 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
             index++;
             setTimeout(typeWriter, typingSpeed);
         }
-
-        if (index === typeString.length) {
-            setTimeout(() => {
-                document.querySelector('.icon-mail-1').style.display = 'inline-block';
-            }, 1000);
-        }
     }
 
     // Create an intersection observer
