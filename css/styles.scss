@@ -213,11 +213,11 @@ a {
   padding-top: 240px;
   display: block;
   text-align: left;
-  margin-left: 212px;
+  margin-left: 225px;
   color: $color-gray;
   
   @media screen and (max-width: 767px) {
-    margin-left: 35%;
+    margin-left: 30%;
     padding-top: 180px;
   }
 }
@@ -246,7 +246,7 @@ a {
   max-width: 500px;
   
   @media screen and (max-width: 767px) {
-    margin-left: 50%;
+    margin-left: 40%;
     font-size: 1.1rem;
   }
 }
@@ -260,9 +260,10 @@ a {
   bottom: 100px;
   
   @media screen and (min-width: 768px) {
-    position: static;
     float: right;
     margin-top: 20px;
+    right: -30px;
+    bottom: 100px;
   }
 }
 
@@ -563,17 +564,6 @@ h2 {
   }
   .name {
     font-size: 6rem;
-  }
-  .scroll {
-    position: fixed;
-    right: -30px;
-    bottom: 100px;
-  }
-  .iam {
-    margin-left: 35%;
-  }
-  .title {
-    margin-left: 45%;
   }
   .glide__arrow--left {
     left: 0 !important;
