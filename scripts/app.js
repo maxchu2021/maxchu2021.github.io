@@ -1,5 +1,5 @@
 function scroll() {
-    if (document.querySelector('.contact').getBoundingClientRect().y < 100) {
+    if (document.querySelector('#contact').getBoundingClientRect().y < 100) {
         document.querySelector('.scroll').innerHTML = '<span class="line">___</span> Scroll';
         document.querySelector('.scroll').style.marginRight = '0';
     } else if (window.scrollY > document.querySelector('section').offsetHeight - 300) {
@@ -23,7 +23,7 @@ new Glide('.glide3', { autoplay: 2000 }).mount()
 new Glide('.glide4', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
-const aboutSection = document.querySelector('section.about .main-container');
+const aboutSection = document.querySelector('#about .main-container');
 const observerOptions = {
   threshold: 0.3,
   rootMargin: '0px 0px -50px 0px'
