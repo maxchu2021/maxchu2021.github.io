@@ -21,7 +21,6 @@ new Glide('.glide', { autoplay: 2000 }).mount()
 new Glide('.glide2', { autoplay: 2000 }).mount()
 new Glide('.glide3', { autoplay: 2000 }).mount()
 new Glide('.glide4', { autoplay: 2000 }).mount()
-new Glide('.glide5', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
 const aboutSection = document.querySelector('section.about .main-container');
@@ -75,4 +74,22 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typewriterElement) {
         observer.observe(typewriterElement);
     }
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
 });

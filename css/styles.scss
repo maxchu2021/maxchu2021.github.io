@@ -98,7 +98,7 @@ section {
   }
   
   &.contact {
-    padding-top: 120px;
+    padding-top: 70px;
     height: 100vh;
     i{
       font-size: 3rem;
@@ -143,6 +143,7 @@ header {
 }
 
 nav {
+  position: fixed;
   right: 0;
   font-weight: bold;
   float: right;
@@ -281,12 +282,12 @@ ul {
 footer {
   position: fixed;
   z-index: 0;
-  bottom: 100px;
+  bottom: 0;
   width: 100%;
   
   ul {
-    padding-top: 60px;
-    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-left: 50px;
     float: left;
     margin: 0;
     width: 30px;
@@ -317,7 +318,7 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 40px;
   text-decoration: none;
   transition: all 0.3s ease;
   
@@ -360,7 +361,7 @@ footer {
   }
   
   h2 {
-    padding-top: 0;
+    padding-top: 20px;
     margin: 0 0 40px;
     text-align: center;
     position: relative;
