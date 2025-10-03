@@ -64,10 +64,6 @@ body {
   .main-container {
     width: 600px;
 
-    @media screen and (max-width: 767px) {
-      width: 100%;
-    }
-        
     // Intro Text Styles
     .iam {
       padding-top: 240px;
@@ -203,7 +199,6 @@ body {
   }
 }
 
-// Projects Section
 #projects {
   padding: 100px 0;
 
@@ -326,74 +321,6 @@ body {
   }
 }
 
-h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-
-.color-gray {
-  color: #a1a4a8;
-}
-
-.glide__bullets {
-  bottom: -2em !important;
-  z-index: 200;
-  position: relative;
-}
-
-.glide__arrow {
-  border-radius: 50% !important;
-  background: white !important;
-}
-.glide__arrow:hover {
-  background: #a1a4a8 !important;
-}
-
-@media screen and (max-width: 767px) {
-  .main-container {
-    width: 100%;
-  }
-  header {
-    padding-top: 20px;
-    padding-left: 20px;
-    display: none;
-  }
-  .name {
-    font-size: 6rem;
-  }
-  .glide__arrow--left {
-    left: 0 !important;
-  }
-  .glide__arrow--right {
-    right: 0 !important;
-  }
-  .glide__arrow {
-    top: 40% !important;
-    padding: 4px 6px !important;
-  }
-  .flex {
-    display: block;
-  }
-}
-
-/* Process Timeline */
-.process {
-  padding: 80px 0;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    position: relative;
-    padding-bottom: 15px;
-  }
-  h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
-}
-
-/* Services Section */
 #services {
   padding: 85px 0;
 
@@ -494,6 +421,125 @@ h2 {
   }
 }
 
+footer {
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  width: 100%;
+  
+  ul {
+    padding-bottom: 40px;
+    padding-left: 50px;
+    float: left;
+    margin: 0;
+    width: 30px;
+    
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+    }
+    
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      line-height: 2rem;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .line {
+    position: relative;
+    top: -9px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  // Scroll Indicator
+  .scroll {
+    transform: rotate(90deg);
+    float: right;
+    position: fixed;
+    right: -30px;
+    bottom: 100px;
+    
+    @media screen and (min-width: 768px) {
+      float: right;
+      margin-top: 20px;
+      right: -30px;
+      bottom: 100px;
+    }
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.color-gray {
+  color: #a1a4a8;
+}
+
+
+// Glide
+.glide__bullets {
+  bottom: -2em !important;
+  z-index: 200;
+  position: relative;
+}
+
+.glide__arrow {
+  border-radius: 50% !important;
+  background: white !important;
+}
+.glide__arrow:hover {
+  background: #a1a4a8 !important;
+}
+
+// Responsive
+@media screen and (max-width: 767px) {
+  header {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: none;
+  }
+  .name {
+    font-size: 6rem;
+  }
+  .glide__arrow--left {
+    left: 0 !important;
+  }
+  .glide__arrow--right {
+    right: 0 !important;
+  }
+  .glide__arrow {
+    top: 40% !important;
+    padding: 4px 6px !important;
+  }
+  .flex {
+    display: block;
+  }
+}
+
+/* Process Timeline */
+.process {
+  padding: 80px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -506,9 +552,8 @@ h2 {
   margin-right: 40px;
 }
 
-
 .avatar {
-  background-image: url('../img/max.jpg');
+  background-image: url('../images/max.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 100%;
@@ -599,58 +644,6 @@ a {
   
 ul {
   list-style: none;
-}
-  
-footer {
-  position: fixed;
-  z-index: 0;
-  bottom: 0;
-  width: 100%;
-  
-  ul {
-    padding-bottom: 40px;
-    padding-left: 50px;
-    float: left;
-    margin: 0;
-    width: 30px;
-    
-    @media screen and (max-width: 767px) {
-      padding-left: 20px;
-    }
-    
-    li {
-      display: inline-block;
-      margin-right: 20px;
-      line-height: 2rem;
-      
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  .line {
-    position: relative;
-    top: -9px;
-    margin: 0 10px;
-    display: inline-block;
-  }
-
-  // Scroll Indicator
-  .scroll {
-    transform: rotate(90deg);
-    float: right;
-    position: fixed;
-    right: -30px;
-    bottom: 100px;
-    
-    @media screen and (min-width: 768px) {
-      float: right;
-      margin-top: 20px;
-      right: -30px;
-      bottom: 100px;
-    }
-  }
 }
   
 // Buttons
