@@ -52,6 +52,14 @@ h2 {
   color: #a1a4a8;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 /* Process Timeline */
 .process {
   padding: 80px 0;
@@ -70,6 +78,10 @@ h2 {
 
 .justify-center {
   justify-content: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-40 {
@@ -91,6 +103,8 @@ a:hover {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -285,11 +299,6 @@ ul {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-#about img:hover {
-  transform: translateY(-5px);
 }
 #about .services-grid {
   display: grid;
@@ -316,6 +325,64 @@ ul {
   #about .services-grid .service-card {
     padding: 10px;
   }
+}
+#about .resume {
+  width: 600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  #about .resume {
+    width: 100%;
+  }
+  #about .resume .text-center {
+    width: 100%;
+    text-align: left;
+  }
+  #about .resume .text-center br {
+    display: none;
+  }
+}
+#about .resume span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#about .resume .text-left {
+  margin-left: 40px;
+  padding-left: 20px;
+  border-left: 1px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  #about .resume .text-left {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+}
+#about .resume .resume-logo-container {
+  display: flex;
+  gap: 4px;
+}
+#about .resume .resume-logo-container .resume-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #about .resume .resume-logo-container .resume-logo {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+}
+#about .resume .resume-logo-container .resume-logo img {
+  width: 90%;
 }
 @media screen and (max-width: 767px) {
   #about {
