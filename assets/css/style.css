@@ -327,7 +327,7 @@ ul {
   }
 }
 #about .resume {
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
@@ -347,7 +347,8 @@ ul {
   font-weight: 600;
 }
 #about .resume .text-left {
-  margin-left: 40px;
+  margin-left: 98px;
+  padding-top: 20px;
   padding-left: 20px;
   border-left: 1px solid #ccc;
 }
