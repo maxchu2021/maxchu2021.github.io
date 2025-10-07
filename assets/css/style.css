@@ -558,7 +558,7 @@ ul {
 }
 #services .pricing-grid .pricing-card .pricing-header .subtitle {
   color: #ccc;
-  margin: 0;
+  margin-top: 20px;
 }
 #services .pricing-grid .pricing-card .pricing-features {
   list-style: none;
