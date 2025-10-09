@@ -259,6 +259,10 @@ ul {
   width: 200px;
   height: 200px;
 }
+#about .main-container .intro {
+  width: 800px;
+  margin: 40px auto;
+}
 #about .main-container .service-card {
   opacity: 0;
   transform: translateY(20px);
