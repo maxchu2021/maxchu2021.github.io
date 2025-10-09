@@ -604,11 +604,11 @@ ul {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-#contact img {
+#contact .contact-cover {
   border-radius: 20px;
 }
 @media screen and (max-width: 767px) {
-  #contact img {
+  #contact .contact-cover {
     width: 100%;
   }
 }
