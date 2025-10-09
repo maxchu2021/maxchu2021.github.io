@@ -38,7 +38,7 @@
 body {
   background-color: #121213;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #dfdde1;
   margin: 0;
 }
@@ -263,6 +263,11 @@ ul {
   width: 800px;
   margin: 40px auto;
 }
+@media screen and (max-width: 767px) {
+  #about .main-container .intro {
+    width: 100%;
+  }
+}
 #about .main-container .service-card {
   opacity: 0;
   transform: translateY(20px);
@@ -296,7 +301,6 @@ ul {
 @media screen and (max-width: 767px) {
   #about p {
     width: 100%;
-    font-size: 1rem;
   }
 }
 #about img {
