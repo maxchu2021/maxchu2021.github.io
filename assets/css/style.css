@@ -238,6 +238,15 @@ ul {
     font-size: 1.1rem;
   }
 }
+#intro .main-container .btn-primary {
+  background-color: #fff;
+  color: #333;
+  margin-right: 8px;
+}
+#intro .main-container .btn-primary:hover {
+  background-color: transparent;
+  color: #fff;
+}
 
 #about {
   padding: 100px 0;
