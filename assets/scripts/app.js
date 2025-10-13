@@ -23,7 +23,11 @@ new Glide('.glide3', { autoplay: 2000 }).mount()
 new Glide('.glide4', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
-const aboutSection = document.querySelector('#about .main-container');
+const aboutSection = document.querySelector('#about');
+const resumeSection = document.querySelector('#resume');
+const servicesSection = document.querySelector('#services');
+const contactSection = document.querySelector('#contact');
+
 const observerOptions = {
   threshold: 0.3,
   rootMargin: '0px 0px -50px 0px'
@@ -40,6 +44,18 @@ const observer = new IntersectionObserver((entries) => {
 
 if (aboutSection) {
   observer.observe(aboutSection);
+}
+
+if (resumeSection) {
+  observer.observe(resumeSection);
+}
+
+if (servicesSection) {
+  observer.observe(servicesSection);
+}
+
+if (contactSection) {
+  observer.observe(contactSection);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -92,4 +108,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+const btnMoreResume = document.querySelector('.btn-more-resume');
+btnMoreResume.addEventListener('click', function() {
+    const hide = document.querySelectorAll('.hide');
+    Array.from(hide).forEach(function(item) {
+        item.style.display = item.style.display !== 'block' ? 'block' : 'none';
+    });
+    this.innerHTML = this.innerHTML === '收起' ? '查看更多' : '收起';
 });
