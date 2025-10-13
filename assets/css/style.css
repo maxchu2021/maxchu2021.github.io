@@ -248,8 +248,23 @@ ul {
   color: #fff;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #about {
-  padding: 100px 0;
+  opacity: 0;
+  padding: 40px 0;
+}
+#about.in-view {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
 }
 #about .main-container {
   max-width: 1200px;
@@ -269,31 +284,13 @@ ul {
   height: 200px;
 }
 #about .main-container .intro {
-  width: 800px;
+  width: 1000px;
   margin: 40px auto;
 }
 @media screen and (max-width: 767px) {
   #about .main-container .intro {
     width: 100%;
   }
-}
-#about .main-container .service-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-#about .main-container .service-card:nth-child(1) {
-  transition-delay: 0.4s;
-}
-#about .main-container .service-card:nth-child(2) {
-  transition-delay: 0.6s;
-}
-#about .main-container .service-card:nth-child(3) {
-  transition-delay: 0.8s;
-}
-#about .main-container.in-view .service-card {
-  opacity: 1;
-  transform: translateY(0);
 }
 #about h2 {
   padding-top: 20px;
@@ -350,15 +347,17 @@ ul {
 }
 
 #resume {
-  padding: 100px 0;
+  padding: 30px 0;
+  opacity: 0;
+}
+#resume.in-view {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
 }
 #resume .main-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 0.3s;
 }
 #resume .main-container .resume {
   width: 700px;
@@ -418,7 +417,7 @@ ul {
 }
 
 #projects {
-  padding: 100px 0;
+  padding: 40px 0;
 }
 #projects img {
   width: 100%;
@@ -534,15 +533,16 @@ ul {
 }
 
 #services {
-  padding: 85px 0;
+  opacity: 0;
+  padding: 10px 0;
   /* Pricing Section */
 }
-#services .main-container {
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
+#services.in-view {
+  animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.3s;
 }
 #services h2 {
+  padding-top: 20px;
   text-align: center;
   margin-bottom: 60px;
   position: relative;
@@ -608,14 +608,19 @@ ul {
 }
 
 #contact {
-  padding-top: 70px;
+  opacity: 0;
+  padding-top: 40px;
   height: 100vh;
+}
+#contact.in-view {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
 }
 #contact i {
   font-size: 3rem;
 }
 #contact h2 {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #contact p {
   margin-top: 50px;
@@ -746,6 +751,10 @@ footer .scroll {
   .flex-mobile-col {
     flex-direction: column;
   }
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
