@@ -18,6 +18,8 @@ window.addEventListener('scroll', () => {
 scroll();
 
 new Glide('.glide', { autoplay: 2000 }).mount()
+new Glide('.glide2', { autoplay: 2000 }).mount()
+new Glide('.glide3', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
 const aboutSection = document.querySelector('#about');
