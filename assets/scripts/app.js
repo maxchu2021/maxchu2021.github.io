@@ -108,12 +108,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-const btnMoreResume = document.querySelector('.btn-more-resume');
-btnMoreResume.addEventListener('click', function() {
-    const hide = document.querySelectorAll('.hide');
-    Array.from(hide).forEach(function(item) {
-        item.style.display = item.style.display !== 'block' ? 'block' : 'none';
-    });
-    this.innerHTML = this.innerHTML === '收起' ? '查看更多' : '收起';
-});
