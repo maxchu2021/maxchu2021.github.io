@@ -267,7 +267,7 @@ ul {
   animation-delay: 0.3s;
 }
 #about .main-container {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
   opacity: 0;
@@ -284,7 +284,6 @@ ul {
   height: 200px;
 }
 #about .main-container .intro {
-  width: 1000px;
   margin: 40px auto;
 }
 @media screen and (max-width: 767px) {
