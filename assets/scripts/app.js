@@ -23,7 +23,6 @@ new Glide('.glide3', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
 const aboutSection = document.querySelector('#about');
-const resumeSection = document.querySelector('#resume');
 const servicesSection = document.querySelector('#services');
 const contactSection = document.querySelector('#contact');
 
@@ -45,10 +44,6 @@ if (aboutSection) {
   observer.observe(aboutSection);
 }
 
-if (resumeSection) {
-  observer.observe(resumeSection);
-}
-
 if (servicesSection) {
   observer.observe(servicesSection);
 }
@@ -56,6 +51,7 @@ if (servicesSection) {
 if (contactSection) {
   observer.observe(contactSection);
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const typeString = "來聊聊您所需要的服務";

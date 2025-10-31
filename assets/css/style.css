@@ -297,6 +297,11 @@ ul {
   text-align: center;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  #about h2 {
+    padding-top: 60px;
+  }
+}
 #about p {
   text-align: left;
   margin: 20px auto;
@@ -347,7 +352,11 @@ ul {
 
 #resume {
   padding: 30px 0;
-  opacity: 0;
+}
+@media screen and (max-width: 767px) {
+  #resume h2 {
+    padding-top: 40px;
+  }
 }
 #resume.in-view {
   animation: fadeInUp 1s ease-out forwards;
@@ -357,6 +366,12 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+#resume .main-container ul {
+  list-style: disc;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1rem;
 }
 #resume .main-container .resume {
   width: 700px;
@@ -449,6 +464,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   #projects h2 {
+    padding-top: 40px;
     margin-bottom: 40px;
   }
 }
@@ -547,6 +563,11 @@ ul {
   position: relative;
   padding-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+  #services h2 {
+    padding-top: 60px;
+  }
+}
 #services h3 {
   text-align: center;
   margin-bottom: 20px;
@@ -608,7 +629,7 @@ ul {
 
 #contact {
   opacity: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   height: 100vh;
 }
 #contact.in-view {
@@ -619,7 +640,12 @@ ul {
   font-size: 3rem;
 }
 #contact h2 {
-  margin-top: 20px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  #contact h2 {
+    padding-top: 60px;
+  }
 }
 #contact p {
   margin-top: 50px;
