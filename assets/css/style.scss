@@ -315,6 +315,9 @@ ul {
     margin: 0 0 40px;
     text-align: center;
     position: relative;
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
   }
 
   p {
@@ -366,7 +369,12 @@ ul {
 
 #resume {
   padding: 30px 0;
-  opacity: 0;
+
+  h2 {
+    @media screen and (max-width: 767px) {
+      padding-top: 40px;
+    }
+  }
 
   &.in-view {
     animation: fadeInUp 1s ease-out forwards;
@@ -377,6 +385,13 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
+    ul {
+      list-style: disc;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
 
     .resume {
       width: 700px;
@@ -471,6 +486,7 @@ ul {
     position: relative;
     
     @media screen and (max-width: 767px) {
+      padding-top: 40px;
       margin-bottom: 40px;
     }
   }
@@ -575,6 +591,10 @@ ul {
     margin-bottom: 60px;
     position: relative;
     padding-bottom: 15px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
   }
   
   h3 {
@@ -649,7 +669,7 @@ ul {
 
 #contact {
   opacity: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   height: 100vh;
 
   &.in-view {
@@ -662,7 +682,11 @@ ul {
   }
 
   h2 {
-    margin-top: 20px;
+    padding-top: 20px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
   }
 
   p {
