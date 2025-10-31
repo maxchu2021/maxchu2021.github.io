@@ -260,14 +260,15 @@ ul {
 }
 #about {
   opacity: 0;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 #about.in-view {
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.3s;
 }
 #about .main-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
   opacity: 0;
@@ -351,7 +352,9 @@ ul {
 }
 
 #resume {
-  padding: 30px 0;
+  background-color: #42424E;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 767px) {
   #resume h2 {
@@ -431,7 +434,8 @@ ul {
 }
 
 #projects {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 #projects img {
   width: 100%;
@@ -548,8 +552,10 @@ ul {
 }
 
 #services {
+  background-color: #42424E;
   opacity: 0;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 60px;
   /* Pricing Section */
 }
 #services.in-view {
