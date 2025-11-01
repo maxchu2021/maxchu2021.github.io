@@ -6,7 +6,7 @@
     <meta name="description" content="Max | 二十年網站開發經驗工程師，提供專業網站開發服務">
     <meta name="keywords" content="網站開發, 網頁設計, 資深工程師, 前後端開發, Drupal, Yii, PHP, Vue, React, Wordpress">
     <title>Max | 二十年網站工程師提供專業網站開發服務</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="intro">
+    <section id="hero">
         <header>
-            <a href="#intro">Max</a>
+            <a href="#hero">Max</a>
         </header>
         <nav>
             <ul>
@@ -28,9 +28,8 @@
             </ul>
         </nav>
         <div class="main-container">
-            <span class="iam">我是</span> 
-            <span class="name">Max</span> 
-            <span class="title">二十年網站工程師<br>提供專業網站開發服務</span>
+            <span class="name">Max</span>
+            <div class="title">二十年經驗全端工程師提供專業網站開發服務</div>
             <a href="#about" class="btn btn-primary mt-40">深入瞭解</a>
             <a href="#contact" class="btn">聯絡我</a>
         </div>
@@ -41,12 +40,16 @@
     <section id="about">
         <div class="main-container">
             <h2>關於我</h2>
-            <div class="avatar"></div>
-            <div class="intro">
-                <p>資深網站工程師，網站相關開發經驗二十年，專注於前端技術 React / Vue 與後端技術應用（多種PHP MVC Framework），使用過 WordPress 和 Drupal 兩個熱門的內容管理系統開發，習慣透過流程或新工具改善開發體驗。</p>
-                <p>曾任職於多間中小企業，有自行接案、和團隊開發產品和平台、以及和參與過 AppWorks 的新創團隊一起共同創業...等經驗。</p>
-                <p>處理過無數多程式技術相關的疑難雜症，個人喜歡挑戰，因此也在每次進到新的領域時，都會積極學習和整合。</p>
-                <p>目前為自由工作者，有和多家公司合作，提供網站開發的服務，歡迎合作邀約。</p>
+            <div class="inline-flex">
+                <div class="flex-col col-4 avatar">
+                    <img src="./assets/images/max.jpg" alt="Max">
+                </div>
+                <div class="flex-col col-8 intro">
+                    <p>資深網站工程師，網站相關開發經驗二十年，專注於前端技術 React / Vue 與後端技術應用（多種PHP MVC Framework），使用過 WordPress 和 Drupal 兩個熱門的內容管理系統開發，習慣透過流程或新工具改善開發體驗。</p>
+                    <p>曾任職於多間中小企業，有自行接案、和團隊開發產品和平台、以及和參與過 AppWorks 的新創團隊一起共同創業...等經驗。</p>
+                    <p>處理過無數多程式技術相關的疑難雜症，個人喜歡挑戰，因此也在每次進到新的領域時，都會積極學習和整合。</p>
+                    <p>目前為自由工作者，有和多家公司合作，提供網站開發的服務，歡迎合作邀約。</p>
+                </div>
             </div>
             <a href="https://forms.gle/gA7w99RgwcnLXtuCA" target="_blank" title="Max 專業網站開發" class="btn">立即諮詢</a>
         </div>
@@ -59,8 +62,8 @@
                     <li class="flex mt-40">
                         <div>2025/09 - 至今</div>
                         <div class="text-left">
-                            <span>磨人創意網路有限公司</span><br>
-                            前端工程師<br>
+                            <span>磨人創意網路有限公司</span>
+                            <div class="position">前端工程師</div>
                             <ul>
                                 <li>負責網頁切版與前端程式開發，將 Figma 設計稿轉換為高相容性的響應式網頁。</li>
                                 <li>使用 React 與 Vue 開發前端互動功能與元件化架構。</li>
@@ -71,8 +74,8 @@
                     <li class="flex mt-40">
                         <div>2025/07 - 至今</div>
                         <div class="text-left">
-                            <span>玄米設計股份有限公司</span><br>
-                            前端工程師<br>
+                            <span>玄米設計股份有限公司</span>
+                            <div class="position">前端工程師</div>
                             <ul>
                                 <li>負責網頁切版與前端程式開發，將 Figma 設計稿轉換為高相容性與響應式的網頁。</li>
                                 <li>使用 Bootstrap 與 jQuery 實作互動效果與前端功能。</li>
@@ -83,8 +86,8 @@
                     <li class="flex mt-40">
                         <div>2019/08 - 2024/06</div>
                         <div class="text-left">
-                            <span>拾穗者文化</span><br>
-                            資深網站工程師<br>
+                            <span>拾穗者文化</span>
+                            <div class="position">資深網站工程師</div>
                             <ul>
                                 <li>使用 Drupal 7、9、10 進行網站專案開發，整合 Symfony 框架進行客製化功能實作。</li>
                                 <li>開發多項關鍵模組與功能，包括回報系統、報名系統、投稿系統、進階搜尋及金流串接。</li>
@@ -98,8 +101,8 @@
                     <li class="flex mt-40">
                         <div>2018/3 - 2019/04</div>
                         <div class="text-left">
-                            <span>凱尼資訊科技有限公司</span><br>
-                            創辦人暨技術總監<br>
+                            <span>凱尼資訊科技有限公司</span>
+                            <div class="position">創辦人暨技術總監</div>
                             <ul>
                                 <li>規劃並建立公司營運模式，負責專案開發、客戶開發與維護。</li>
                                 <li>制定產品策略與行銷方向，整合設計、開發及上線流程。</li>
@@ -111,8 +114,8 @@
                     <li class="flex mt-40">
                         <div>2017/09 - 2019/07</div>
                         <div class="text-left">
-                            <span>VacayCar Inc.</span><br>
-                            合夥人暨資深網站工程師<br>
+                            <span>VacayCar Inc.</span>
+                            <div class="position">合夥人暨資深網站工程師</div>
                             <ul>
                                 <li>參與開發線上行程預訂與旅遊客製化網站，負責後端與前端系統架構設計與開發。</li>
                                 <li>使用 Yii PHP Framework 開發後端功能與 API，確保資料傳輸穩定與安全。</li>
@@ -123,8 +126,8 @@
                     <li class="flex mt-40">
                         <div>2015/12 - 2017/09</div>
                         <div class="text-left">
-                            <span>SEROSE 賽斯科技</span><br>
-                            共同創辦人暨技術長<br>
+                            <span>SEROSE 賽斯科技</span>
+                            <div class="position">共同創辦人暨技術長</div>
                             <ul>
                                 <li>共同創立公司並負責 IoT 產品 App 的開發與技術規劃。</li>
                                 <li>使用 PhoneGap 技術開發跨平台 App，串接感測器裝置以即時偵測打擊力道、耐力及速度。</li>
@@ -137,8 +140,8 @@
                     <li class="flex mt-40">
                         <div>2015/06 - 2015/11</div>
                         <div class="text-left">
-                            <span>Niceday 幸福日子網路</span><br>
-                            專案經理<br>
+                            <span>Niceday 幸福日子網路</span>
+                            <div class="position">專案經理</div>
                             <ul>
                                 <li>有效協調技術團隊與跨部門溝通，降低溝通障礙並促進協作。</li>
                                 <li>協助導入 BDD（行為驅動開發）流程，提升需求明確度與測試覆蓋率。</li>
@@ -151,8 +154,8 @@
                     <li class="flex mt-40">
                         <div>2014/07 - 2015/06</div>
                         <div class="text-left">
-                            <span>91APP 九易宇軒</span><br>
-                            資深網站工程師<br>
+                            <span>91APP 九易宇軒</span>
+                            <div class="position">資深網站工程師</div>
                             <ul>
                                 <li>以 PHP 開發客製化專案和維護現有 PHP 專案，優化既有系統效能與程式架構。</li>
                                 <li>使用 Ruby 開發 iOS 自動化上架工具，縮短 App 上架流程時間約 50%。</li>
@@ -164,8 +167,8 @@
                     <li class="flex mt-40">
                         <div>2013/03 - 2014/07</div>
                         <div class="text-left">
-                            <span>訊利</span><br>
-                            程式設計師組長<br>
+                            <span>訊利</span>
+                            <div class="position">程式設計師組長</div>
                             <ul>
                                 <li>主導團隊以 Yii PHP Framework 開發多個客製化網站與 CMS 專案，負責系統架構設計與開發流程管理。</li>
                                 <li>整合 Google Maps API 實作行程規劃功能，提供即時地圖互動與地點建議，提升產品競爭力。</li>
@@ -176,8 +179,8 @@
                     <li class="flex mt-40">
                         <div>2012/02 - 2012/09</div>
                         <div class="text-left">
-                            <span>Eastbnb Inc.</span><br>
-                            資深網站工程師暨專案經理<br>
+                            <span>Eastbnb Inc.</span>
+                            <div class="position">資深網站工程師暨專案經理</div>
                             <ul>
                                 <li>參與線上住宿預訂平台的開發與維護，負責後端與前端功能實作。</li>
                                 <li>使用 Yii PHP Framework 開發後端 API，並以 Backbone.js 建構前端互動介面。</li>
@@ -190,8 +193,8 @@
                     <li class="flex mt-40">
                         <div>2010/08 - 2012/02</div>
                         <div class="text-left">
-                            <span>春水堂科技娛樂</span><br>
-                            網站工程師<br>
+                            <span>春水堂科技娛樂</span>
+                            <div class="position">網站工程師</div>
                             <ul>
                                 <li>開發與維護 Hami Music API，負責軟體需求分析、系統設計、程式撰寫與功能維護。</li>
                                 <li>進行單元測試與整合測試，確保程式品質與系統穩定性。</li>
@@ -203,8 +206,8 @@
                     <li class="flex mt-40">
                         <div>2010/03 - 2010/08</div>
                         <div class="text-left">
-                            <span>網勁科技股份有限公司</span><br>
-                            網站工程師<br>
+                            <span>網勁科技股份有限公司</span>
+                            <div class="position">網站工程師</div>
                             <ul>
                                 <li>負責 Citytalk.tw 網站的開發與維護，確保網站功能穩定與效能最佳化。</li>
                                 <li>兼任專案經理，規劃開發時程、分配任務並追蹤專案進度。</li>
@@ -216,8 +219,8 @@
                     <li class="flex mt-40">
                         <div>2005/05 - 2008/02</div>
                         <div class="text-left">
-                            <span>多奇數位創意</span><br>
-                            網站工程師暨專案經理<br>
+                            <span>多奇數位創意</span>
+                            <div class="position">網站工程師暨專案經理</div>
                             <ul>
                                 <li>以 PHP 開發各類客製化網站與官網專案，提供完整後端解決方案。</li>
                                 <li>主導專案進度管理與跨團隊協作，確保專案按期完成並符合客戶需求。</li>
@@ -232,76 +235,82 @@
     </section>
     <section id="projects">
         <div class="main-container">
-            <h2>作品案例</h2>
-            <h3>VacayCar</h3>
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <img src="./assets/images/vacaycar_1.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/vacaycar_2.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/vacaycar_3.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/vacaycar_4.jpg" width="500">
-                        </li>
-                    </ul>
+            <div class="project">
+                <h2>作品案例</h2>
+                <h3>VacayCar</h3>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="./assets/images/vacaycar_1.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/vacaycar_2.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/vacaycar_3.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/vacaycar_4.jpg" width="500">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <p>VacayCar 是一個線上預訂行程的旅遊客製化網站，使用到 Yii PHP Framework 框架技術開發，提供行程導覽、自訂行程、線上預訂系統、旅遊部落格，設計包含RWD響應式網頁設計和品牌識別的 Logo，網站能夠透過各種平台來瀏覽，方便使用者隨時自行規劃和預訂旅遊行程。</p>
+                <a href="http://www.otiswu.com/portfolio/vacacars/" target="_blank" class="btn">作品介紹</a>
             </div>
-            <p>VacayCar 是一個線上預訂行程的旅遊客製化網站，使用到 Yii PHP Framework 框架技術開發，提供行程導覽、自訂行程、線上預訂系統、旅遊部落格，設計包含RWD響應式網頁設計和品牌識別的 Logo，網站能夠透過各種平台來瀏覽，方便使用者隨時自行規劃和預訂旅遊行程。</p>
-            <a href="http://www.otiswu.com/portfolio/vacacars/" target="_blank" class="btn">作品介紹</a>
-            <h3>台灣步道守護網</h3>
-            <div class="glide2">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <img src="./assets/images/itrail_1.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/itrail_2.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/itrail_3.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/itrail_4.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/itrail_5.jpg" width="500">
-                        </li>
-                    </ul>
+            <div class="project">
+                <h3>台灣步道守護網</h3>
+                <div class="glide2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="./assets/images/itrail_1.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/itrail_2.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/itrail_3.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/itrail_4.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/itrail_5.jpg" width="500">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <p>使用到 PWA 技術開發的回報系統，在離線的狀態下能夠瀏覽使用網站，並用到 D3.js 的繪圖技術來呈現圖表，後台使用 Drupal 8 內容管理系統。</p>
+                <a href="https://itrail.tw/" target="_blank" class="btn">連結官網</a>
             </div>
-            <p>使用到 PWA 技術開發的回報系統，在離線的狀態下能夠瀏覽使用網站，並用到 D3.js 的繪圖技術來呈現圖表，後台使用 Drupal 8 內容管理系統。</p>
-            <a href="https://itrail.tw/" target="_blank" class="btn">連結官網</a>
-            <h3>台灣昆蟲學會</h3>
-            <div class="glide3">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <img src="./assets/images/entsoc_1.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/entsoc_2.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/entsoc_3.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/entsoc_4.jpg" width="500">
-                        </li>
-                        <li class="glide__slide">
-                            <img src="./assets/images/entsoc_5.jpg" width="500">
-                        </li>
-                    </ul>
+            <div class="project">
+                <h3>台灣昆蟲學會</h3>
+                <div class="glide3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="./assets/images/entsoc_1.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/entsoc_2.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/entsoc_3.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/entsoc_4.jpg" width="500">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/images/entsoc_5.jpg" width="500">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <p>使用 Drupal 8 內容管理框架獨立開發的台灣昆蟲學會官網，提供線上捐款、報名年會、發表論文讓系統匯出 Word 檔案和後台內容管理系統。</p>
+                <a href="http://entsoc.org.tw/" target="_blank" class="btn">連結官網</a>
             </div>
-            <p>使用 Drupal 8 內容管理框架獨立開發的台灣昆蟲學會官網，提供線上捐款、報名年會、發表論文讓系統匯出 Word 檔案和後台內容管理系統。</p>
-            <a href="http://entsoc.org.tw/" target="_blank" class="btn">連結官網</a>
         </div>
     </section>
     <section id="services">
@@ -315,10 +324,9 @@
                         <p class="subtitle">模板網站</p>
                     </div>
                     <ul class="pricing-features">
+                        <li>RWD 響應式設計</li>
+                        <li>基本 SEO 優化</li>
                         <li>3-5 頁基本架構</li>
-                        <li>響應式設計</li>
-                        <li>基本SEO優化</li>
-                        <li>聯絡表單功能</li>
                     </ul>
                     <a href="https://forms.gle/gA7w99RgwcnLXtuCA" target="_blank" title="Max 專業網站開發" class="btn">立即諮詢</a>
                 </div>
@@ -330,10 +338,10 @@
                         <p class="subtitle">動態網站</p>
                     </div>
                     <ul class="pricing-features">
+                        <li>RWD 響應式設計</li>
+                        <li>基本 SEO 優化</li>
+                        <li>5-10 頁基本架構</li>
                         <li>後台管理介面</li>
-                        <li>響應式設計</li>
-                        <li>基本SEO優化</li>
-                        <li>聯絡表單功能</li>
                     </ul>
                     <a href="https://forms.gle/gA7w99RgwcnLXtuCA" target="_blank" title="Max 專業網站開發" class="btn">立即諮詢</a>
                 </div>
@@ -345,10 +353,11 @@
                         <p class="subtitle">客製化官網與系統</p>
                     </div>
                     <ul class="pricing-features">
+                        <li>RWD 響應式設計</li>
+                        <li>基本 SEO 優化</li>
+                        <li>10 頁以上架構</li>
+                        <li>後台管理介面</li>
                         <li>客製化功能開發</li>
-                        <li>響應式設計</li>
-                        <li>基本SEO優化</li>
-                        <li>聯絡表單功能</li>
                     </ul>
                     <a href="https://forms.gle/gA7w99RgwcnLXtuCA" target="_blank" title="Max 專業網站開發" class="btn">立即諮詢</a>
                 </div>

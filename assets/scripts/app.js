@@ -52,7 +52,6 @@ if (contactSection) {
   observer.observe(contactSection);
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const typeString = "來聊聊您所需要的服務";
     const typewriterElement = document.querySelector(".typewriter");
