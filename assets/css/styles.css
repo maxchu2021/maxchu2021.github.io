@@ -456,6 +456,7 @@ ul {
   margin: 0 0 25px;
   text-align: left;
   height: 200px;
+  margin-left: 70px;
 }
 #services .pricing-grid .pricing-card .pricing-features li {
   padding: 8px 0;
@@ -472,7 +473,7 @@ ul {
 }
 
 #projects {
-  padding-top: 40px;
+  padding: 40px 0;
 }
 #projects img {
   width: 100%;
