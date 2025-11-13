@@ -474,6 +474,7 @@ ul {
 }
 #projects img {
   width: 100%;
+  height: 240px;
 }
 #projects .main-container {
   padding-top: 0;
