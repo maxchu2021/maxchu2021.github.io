@@ -33,11 +33,6 @@ body {
   color: #dfdde1;
   margin: 0;
 }
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
 
 h2 {
   font-size: 2.5rem;
@@ -223,6 +218,13 @@ ul {
     background: #121213;
   }
 }
+#hero .cta {
+  margin-top: 80px;
+}
+#hero .cta .btn {
+  margin-right: 8px;
+  min-width: 100px;
+}
 #hero header {
   position: fixed;
   font-weight: bold;
@@ -298,11 +300,6 @@ ul {
 }
 #hero .main-container .title {
   color: #999;
-}
-@media screen and (max-width: 380px) {
-  #hero .main-container .title {
-    font-size: 14px;
-  }
 }
 #hero .main-container .btn-primary {
   background-color: #fff;
