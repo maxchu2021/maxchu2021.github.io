@@ -141,6 +141,7 @@ ul {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   
   &-col {
     flex-direction: column;
@@ -545,6 +546,29 @@ ul {
             font-weight: bold;
           }
         }
+      }
+    }
+  }
+
+  .flex {
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+      margin-left: 0;
+    }
+    ul {
+      width: 40%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    img {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        height: auto;
       }
     }
   }
