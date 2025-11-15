@@ -865,6 +865,7 @@ footer {
     position: fixed;
     right: -30px;
     bottom: 100px;
+    transition: all 0.3s ease;
     
     @media screen and (min-width: 768px) {
       float: right;
