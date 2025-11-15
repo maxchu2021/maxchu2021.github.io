@@ -120,6 +120,7 @@ ul {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .flex-col {
   flex-direction: column;
@@ -477,6 +478,31 @@ ul {
   position: absolute;
   left: 0;
   font-weight: bold;
+}
+#services .flex {
+  padding-left: 20px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  #services .flex {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+#services .flex ul {
+  width: 40%;
+}
+@media screen and (max-width: 767px) {
+  #services .flex ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #services .flex img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #projects {
