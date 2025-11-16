@@ -233,7 +233,6 @@ ul {
 #hero header {
   position: fixed;
   font-weight: bold;
-  font-size: 30px;
   line-height: 19px;
   float: left;
   padding-top: 30px;
@@ -241,14 +240,14 @@ ul {
 }
 #hero header a {
   font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
 }
 #hero nav {
   position: fixed;
   right: 0;
-  font-weight: bold;
   float: right;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 26px;
   z-index: 100;
 }
 #hero nav ul {
