@@ -1,17 +1,3 @@
-function scroll() {
-    if (window.scrollY > document.querySelector('section').offsetHeight - 300) {
-        document.querySelector('.scroll').style.opacity = '0';
-    } else {
-        document.querySelector('.scroll').style.opacity = '1';
-    }
-}
-
-window.addEventListener('scroll', () => {
-    scroll();
-});
-
-scroll();
-
 new Glide('.glide', { autoplay: 2000 }).mount()
 new Glide('.glide2', { autoplay: 2000 }).mount()
 new Glide('.glide3', { autoplay: 2000 }).mount()

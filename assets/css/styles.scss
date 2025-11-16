@@ -337,7 +337,7 @@ ul {
 
     @media screen and (max-width: 500px) {
       width: 100%;
-      top: 25%;
+      top: 20%;
       left: 0;
       margin: 0;
     }
@@ -880,22 +880,6 @@ footer {
     top: -9px;
     margin: 0 10px;
     display: inline-block;
-  }
-
-  .scroll {
-    transform: rotate(90deg);
-    float: right;
-    position: fixed;
-    right: -30px;
-    bottom: 100px;
-    transition: all 0.3s ease;
-    
-    @media screen and (min-width: 768px) {
-      float: right;
-      margin-top: 20px;
-      right: -30px;
-      bottom: 0;
-    }
   }
 }
 

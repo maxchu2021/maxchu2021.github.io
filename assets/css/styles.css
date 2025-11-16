@@ -290,7 +290,7 @@ ul {
 @media screen and (max-width: 500px) {
   #hero .main-container {
     width: 100%;
-    top: 25%;
+    top: 20%;
     left: 0;
     margin: 0;
   }
@@ -792,22 +792,6 @@ footer .line {
   top: -9px;
   margin: 0 10px;
   display: inline-block;
-}
-footer .scroll {
-  transform: rotate(90deg);
-  float: right;
-  position: fixed;
-  right: -30px;
-  bottom: 100px;
-  transition: all 0.3s ease;
-}
-@media screen and (min-width: 768px) {
-  footer .scroll {
-    float: right;
-    margin-top: 20px;
-    right: -30px;
-    bottom: 0;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
