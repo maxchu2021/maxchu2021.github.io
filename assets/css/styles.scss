@@ -282,23 +282,22 @@ ul {
   header {
     position: fixed;
     font-weight: bold;
-    font-size: 30px;
     line-height: 19px;
     float: left;
     padding-top: 30px;
     padding-left: 50px;
     a {
       font-family: "Comfortaa", sans-serif;
+      font-size: 16px;
     }
   }
   
   nav {
     position: fixed;
     right: 0;
-    font-weight: bold;
     float: right;
     text-transform: uppercase;
-    padding-top: 30px;
+    padding-top: 26px;
     z-index: 100;
     ul {
       list-style: none;
@@ -329,16 +328,16 @@ ul {
   }
 
   .main-container {
-    width: 600px;
+    width: 800px;
     height: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -150px 0 0 -300px;
+    margin: -200px 0 0 -400px;
 
     @media screen and (max-width: 500px) {
       width: 100%;
-      top: 35%;
+      top: 20%;
       left: 0;
       margin: 0;
     }
@@ -456,8 +455,6 @@ ul {
 }
 
 #services {
-  // background-color: #42424E;
-  opacity: 0;
 
   &.in-view {
     animation: fadeInUp 1s ease-out forwards;
@@ -529,8 +526,7 @@ ul {
         padding: 0;
         margin: 0 0 25px;
         text-align: left;
-        height: 200px;
-        margin-left: 40px;
+        height: 120px;
 
         li {
           padding: 8px 0;
@@ -566,6 +562,7 @@ ul {
       }
     }
     img {
+      border-radius: 10px;
       @media screen and (max-width: 767px) {
         width: 100%;
         height: auto;
@@ -579,6 +576,7 @@ ul {
 
   img {
     width: 100%;
+    border-radius: 10px;
 
     @media screen and (max-width: 767px) {
       height: 200px;
@@ -881,22 +879,6 @@ footer {
     top: -9px;
     margin: 0 10px;
     display: inline-block;
-  }
-
-  .scroll {
-    transform: rotate(90deg);
-    float: right;
-    position: fixed;
-    right: -30px;
-    bottom: 100px;
-    transition: all 0.3s ease;
-    
-    @media screen and (min-width: 768px) {
-      float: right;
-      margin-top: 20px;
-      right: -30px;
-      bottom: 100px;
-    }
   }
 }
 

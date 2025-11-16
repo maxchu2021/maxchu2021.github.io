@@ -1,17 +1,3 @@
-function scroll() {
-    if (window.scrollY > document.querySelector('section').offsetHeight - 300) {
-        document.querySelector('.scroll').style.opacity = '0';
-    } else {
-        document.querySelector('.scroll').style.opacity = '1';
-    }
-}
-
-window.addEventListener('scroll', () => {
-    scroll();
-});
-
-scroll();
-
 new Glide('.glide', { autoplay: 2000 }).mount()
 new Glide('.glide2', { autoplay: 2000 }).mount()
 new Glide('.glide3', { autoplay: 2000 }).mount()
@@ -19,7 +5,6 @@ new Glide('.glide4', { autoplay: 2000 }).mount()
 
 // Add scroll animation for about section
 const aboutSection = document.querySelector('#about');
-const servicesSection = document.querySelector('#services');
 const contactSection = document.querySelector('#contact');
 
 const observerOptions = {
@@ -40,16 +25,12 @@ if (aboutSection) {
   observer.observe(aboutSection);
 }
 
-if (servicesSection) {
-  observer.observe(servicesSection);
-}
-
 if (contactSection) {
   observer.observe(contactSection);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const typeString = "來聊聊您所需要的服務";
+    const typeString = "來聊聊您所需要的服務，期待與您合作一起創造優質的網站。";
     const typewriterElement = document.querySelector(".typewriter");
     let index = 0;
     const typingSpeed = 150;
@@ -98,4 +79,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+gsap.registerPlugin(SplitText);
+
+gsap.set("h1", { opacity: 1 });
+
+let split = SplitText.create("#heading", { type: "chars" });
+//now animate each character into place from 20px below, fading in:
+gsap.from(split.chars, {
+  y: 100,
+  autoAlpha: 0,
+  stagger: 0.1
 });

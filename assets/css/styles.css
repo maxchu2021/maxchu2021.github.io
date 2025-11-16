@@ -233,7 +233,6 @@ ul {
 #hero header {
   position: fixed;
   font-weight: bold;
-  font-size: 30px;
   line-height: 19px;
   float: left;
   padding-top: 30px;
@@ -241,14 +240,14 @@ ul {
 }
 #hero header a {
   font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
 }
 #hero nav {
   position: fixed;
   right: 0;
-  font-weight: bold;
   float: right;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 26px;
   z-index: 100;
 }
 #hero nav ul {
@@ -281,17 +280,17 @@ ul {
   }
 }
 #hero .main-container {
-  width: 600px;
+  width: 800px;
   height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -300px;
+  margin: -200px 0 0 -400px;
 }
 @media screen and (max-width: 500px) {
   #hero .main-container {
     width: 100%;
-    top: 35%;
+    top: 20%;
     left: 0;
     margin: 0;
   }
@@ -398,7 +397,6 @@ ul {
 }
 
 #services {
-  opacity: 0;
   padding-top: 10px;
   padding-bottom: 60px;
   /* Pricing Section */
@@ -463,8 +461,7 @@ ul {
   padding: 0;
   margin: 0 0 25px;
   text-align: left;
-  height: 200px;
-  margin-left: 40px;
+  height: 120px;
 }
 #services .pricing-grid .pricing-card .pricing-features li {
   padding: 8px 0;
@@ -498,6 +495,9 @@ ul {
     width: 100%;
   }
 }
+#services .flex img {
+  border-radius: 10px;
+}
 @media screen and (max-width: 767px) {
   #services .flex img {
     width: 100%;
@@ -510,6 +510,7 @@ ul {
 }
 #projects img {
   width: 100%;
+  border-radius: 10px;
 }
 @media screen and (max-width: 767px) {
   #projects img {
@@ -790,22 +791,6 @@ footer .line {
   top: -9px;
   margin: 0 10px;
   display: inline-block;
-}
-footer .scroll {
-  transform: rotate(90deg);
-  float: right;
-  position: fixed;
-  right: -30px;
-  bottom: 100px;
-  transition: all 0.3s ease;
-}
-@media screen and (min-width: 768px) {
-  footer .scroll {
-    float: right;
-    margin-top: 20px;
-    right: -30px;
-    bottom: 100px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
