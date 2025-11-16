@@ -280,12 +280,12 @@ ul {
   }
 }
 #hero .main-container {
-  width: 600px;
+  width: 750px;
   height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -300px;
+  margin: -200px 0 0 -375px;
 }
 @media screen and (max-width: 500px) {
   #hero .main-container {
@@ -397,7 +397,6 @@ ul {
 }
 
 #services {
-  opacity: 0;
   padding-top: 10px;
   padding-bottom: 60px;
   /* Pricing Section */
@@ -497,6 +496,9 @@ ul {
     width: 100%;
   }
 }
+#services .flex img {
+  border-radius: 10px;
+}
 @media screen and (max-width: 767px) {
   #services .flex img {
     width: 100%;
@@ -509,6 +511,7 @@ ul {
 }
 #projects img {
   width: 100%;
+  border-radius: 10px;
 }
 @media screen and (max-width: 767px) {
   #projects img {
