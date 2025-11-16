@@ -280,12 +280,12 @@ ul {
   }
 }
 #hero .main-container {
-  width: 750px;
+  width: 800px;
   height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -200px 0 0 -375px;
+  margin: -200px 0 0 -400px;
 }
 @media screen and (max-width: 500px) {
   #hero .main-container {
