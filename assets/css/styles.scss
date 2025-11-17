@@ -78,6 +78,10 @@ ul {
   width: 66.66666666666666%;
 }
 
+.text-gray {
+  color: #999;
+}
+
 // ========================================
 // Utility Classes
 // ========================================
@@ -255,7 +259,7 @@ ul {
   }
   
   .flex {
-    display: block;
+    // display: block;
   }
 }
 
@@ -704,9 +708,15 @@ ul {
 }
 
 #resume {
-  // background-color: #42424E;
   padding-top: 30px;
-  padding-bottom: 80px;
+
+  .work {
+    width: 320px;
+
+    @media screen and (max-width: 767px) {
+      width: 260px;
+    }
+  }
 
   h2 {
     @media screen and (max-width: 767px) {
@@ -725,15 +735,18 @@ ul {
     padding: 0 20px;
 
     ul {
-      list-style: disc;
-      margin-top: 20px;
-      margin-left: 20px;
+      ul {
+        list-style: disc;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
     }
 
     .resume {
-      width: 700px;
-      margin: 0 auto;
-    
+      margin: 40px auto;
+      width: 100%;  
+      overflow-x: scroll;
+
       @media screen and (max-width: 767px) {
         width: 100%;
     
@@ -755,6 +768,11 @@ ul {
         }
       }
 
+      .flex {
+        gap: 40px;
+        width: 4680px;
+      }
+    
       li {
         text-align: left;
       }
@@ -764,20 +782,15 @@ ul {
         font-weight: 600;
       }
 
-      .position {
-        color: #999;
-      }
-    
       .text-left {
-        margin-left: 90px;
+        // margin-left: 90px;
         padding-top: 20px;
-        padding-left: 20px;
-        border-left: 1px solid #ccc;
+        // border-left: 1px solid #ccc;
     
         @media screen and (max-width: 767px) {
           margin-left: 0;
           padding-left: 0;
-          border-left: none;
+          // border-left: none;
         }
       }
       
