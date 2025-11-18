@@ -244,6 +244,10 @@ ul {
   .name {
     font-size: 6rem;
   }
+
+  h4 {
+
+  }
   
   .glide__arrow--left {
     left: 0 !important;
@@ -346,8 +350,8 @@ ul {
       margin: 0;
     }
 
-    .name {
-      display: block;
+    h1 {
+      opacity: 0;
       font-family: "Comfortaa", sans-serif;
       font-size: 10rem;
       font-weight: bold;
@@ -358,6 +362,10 @@ ul {
       @media screen and (max-width: 500px) {
         font-size: 8rem;
       }
+    }
+
+    h4 {
+      opacity: 0;
     }
 
     .title {

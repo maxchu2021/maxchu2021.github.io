@@ -82,13 +82,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 gsap.registerPlugin(SplitText);
-
 gsap.set("h1", { opacity: 1 });
-
 let split = SplitText.create("#heading", { type: "chars" });
-//now animate each character into place from 20px below, fading in:
 gsap.from(split.chars, {
-  y: 100,
+  y: 60,
   autoAlpha: 0,
   stagger: 0.1
+});
+
+gsap.set("h4", { opacity: 1 });
+let split2 = SplitText.create(".title", { type: "chars" });
+gsap.from(split2.chars, {
+  y: 20,
+  autoAlpha: 0,
+  stagger: 0.1,
+  delay: 0.7
 });
