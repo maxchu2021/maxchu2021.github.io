@@ -211,6 +211,20 @@ ul {
   }
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #333;
+  margin-right: 8px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 // ========================================
 // Third-party Libraries
 // ========================================
@@ -289,6 +303,7 @@ ul {
 
   header {
     position: fixed;
+    z-index: 100;
     font-weight: bold;
     line-height: 19px;
     float: left;
@@ -370,17 +385,6 @@ ul {
 
     .title {
       color: #999;
-    }
-
-    .btn-primary {
-      background-color: #fff;
-      color: #333;
-      margin-right: 8px;
-
-      &:hover {
-        background-color: transparent;
-        color: #fff;
-      }
     }
   }
 }
@@ -901,10 +905,6 @@ footer {
     margin: 0 10px;
     display: inline-block;
   }
-}
-
-.rounded {
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
