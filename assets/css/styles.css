@@ -802,4 +802,8 @@ footer .line {
   display: inline-block;
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=styles.css.map */
