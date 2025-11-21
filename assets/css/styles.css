@@ -454,8 +454,6 @@ ul {
 }
 #services .pricing-grid .pricing-card .pricing-header {
   margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
 }
 #services .pricing-grid .pricing-card .pricing-header h3 {
   font-size: 1.5rem;
@@ -542,13 +540,6 @@ ul {
 }
 #projects .main-container .project p {
   text-align: left;
-  width: 80%;
-  margin: 20px auto;
-}
-@media screen and (max-width: 767px) {
-  #projects .main-container .project p {
-    width: 100%;
-  }
 }
 #projects h2 {
   margin-top: 20px;
