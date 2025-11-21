@@ -84,7 +84,7 @@ gsap.registerPlugin(SplitText);
 gsap.set("h1", { opacity: 1 });
 let split = SplitText.create("#heading", { type: "chars" });
 gsap.from(split.chars, {
-  y: 60,
+  y: 30,
   autoAlpha: 0,
   stagger: 0.1
 });
@@ -94,6 +94,6 @@ let split2 = SplitText.create(".title", { type: "chars" });
 gsap.from(split2.chars, {
   y: 20,
   autoAlpha: 0,
-  stagger: 0.1,
+  stagger: 0.03,
   delay: 0.7
 });
