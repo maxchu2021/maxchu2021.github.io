@@ -238,6 +238,7 @@ ul {
   }
 }
 #hero .cta {
+  opacity: 0;
   margin-top: 80px;
 }
 #hero .cta .btn {
