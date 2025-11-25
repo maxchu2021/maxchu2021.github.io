@@ -77,10 +77,14 @@ if (contactSection) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const typeString = "來聊聊您所需要的服務，期待與您合作一起創造優質的網站。";
+    let typeString = "來聊聊您所需要的服務，期待與您合作一起創造優質的網站。";
+    if (location.pathname.includes('/en')) {
+      typeString = "Come and chat about the services you need, looking forward to working with you to create high-quality websites.";
+    }
+
     const typewriterElement = document.querySelector(".typewriter");
     let index = 0;
-    const typingSpeed = 150;
+    const typingSpeed = 50;
     let hasAnimated = false;
 
     function typeWriter() {
