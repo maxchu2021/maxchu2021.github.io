@@ -28,7 +28,7 @@
 }
 body {
   background-color: #121213;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Poppins", "Courier New", Courier, monospace;
   font-size: 16px;
   color: #dfdde1;
   margin: 0;
@@ -163,6 +163,7 @@ ul {
 }
 
 .btn {
+  min-width: 200px;
   position: relative;
   z-index: 200;
   border: 1px solid #fff;
@@ -256,7 +257,7 @@ ul {
   padding-left: 50px;
 }
 #hero header a {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 #hero nav {
@@ -281,8 +282,7 @@ ul {
     border: 1px solid;
     margin: 10px;
     padding: 10px;
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     padding-bottom: 10px;
     position: fixed;
     left: 0;
@@ -297,12 +297,12 @@ ul {
   }
 }
 #hero .main-container {
-  width: 800px;
-  height: 300px;
+  width: 900px;
+  height: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -200px 0 0 -400px;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 500px) {
   #hero .main-container {
@@ -314,7 +314,7 @@ ul {
 }
 #hero .main-container h1 {
   opacity: 0;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10rem;
   font-weight: bold;
   line-height: 1;
@@ -363,7 +363,7 @@ ul {
   }
 }
 #about .main-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
   opacity: 0;
@@ -407,14 +407,13 @@ ul {
   }
 }
 
-#services {
-  padding-top: 10px;
-  padding-bottom: 60px;
-  /* Pricing Section */
-}
 #services.in-view {
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.3s;
+}
+#services {
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 #services h2 {
   padding-top: 20px;
@@ -434,6 +433,9 @@ ul {
   position: relative;
   padding-bottom: 15px;
   font-size: 2rem;
+}
+#services {
+  /* Pricing Section */
 }
 #services .pricing-grid {
   display: grid;
@@ -461,6 +463,12 @@ ul {
   font-size: 1.5rem;
   margin: 0 0 10px;
 }
+#services .pricing-grid .pricing-card .pricing-header .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a6cf7;
+  margin: 10px 0;
+}
 #services .pricing-grid .pricing-card .pricing-header .subtitle {
   color: #ccc;
   margin-top: 20px;
@@ -470,7 +478,7 @@ ul {
   padding: 0;
   margin: 0 0 25px;
   text-align: left;
-  height: 150px;
+  height: 180px;
 }
 #services .pricing-grid .pricing-card .pricing-features li {
   padding: 8px 0;

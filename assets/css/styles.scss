@@ -43,7 +43,7 @@
 
 body {
   background-color: #121213;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
   font-size: 16px;
   color: #dfdde1;
   margin: 0;
@@ -192,6 +192,7 @@ ul {
 }
 
 .btn {
+  min-width: 200px;
   position: relative;
   z-index: 200;
   border: 1px solid #fff;
@@ -312,7 +313,7 @@ ul {
     padding-top: 30px;
     padding-left: 50px;
     a {
-      font-family: "Comfortaa", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 16px;
     }
   }
@@ -353,12 +354,12 @@ ul {
   }
 
   .main-container {
-    width: 800px;
-    height: 300px;
+    width: 900px;
+    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -200px 0 0 -400px;
+    transform: translate(-50%, -50%);
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -369,7 +370,7 @@ ul {
 
     h1 {
       opacity: 0;
-      font-family: "Comfortaa", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 10rem;
       font-weight: bold;
       line-height: 1;
@@ -426,7 +427,7 @@ ul {
   }
 
   .main-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
     opacity: 0;
@@ -531,6 +532,13 @@ ul {
           margin: 0 0 10px;
         }
 
+        .price {
+          font-size: 2rem;
+          font-weight: 700;
+          color: #4a6cf7;
+          margin: 10px 0;
+        }
+
         .subtitle {
           color: #ccc;
           margin-top: 20px;
@@ -542,7 +550,7 @@ ul {
         padding: 0;
         margin: 0 0 25px;
         text-align: left;
-        height: 150px;
+        height: 180px;
 
         li {
           padding: 8px 0;
